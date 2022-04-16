@@ -46,10 +46,10 @@ export default class TopPage extends React.Component {
         };
         let cards = []
         services.map((service) => {
-                cards.push(<Card service={service}/>)
-            })
+            cards.push(<Card service={service}/>)
+        })
 
-        return(
+        return (
             <Slider {...settings}>
                 {cards}
             </Slider>
@@ -88,24 +88,20 @@ export default class TopPage extends React.Component {
                                         <div className={'one-category'}>
                                             <div className={'category-header'}>
                                                 <img src={"/images/main-images/movie_category.svg"}/>
-
-
-                                                    <Header as={'h2'}>
-                                                        {category.category_name}
-                                                    </Header>
-                                                    <Header as={'h4'} className={'show-more'}>
-                                                        すべてを見る
-                                                    </Header>
-
+                                                <Header as={'h2'}>
+                                                    {category.category_name}
+                                                </Header>
+                                                <Header as={'h4'} className={'show-more'}>
+                                                    すべてを見る
+                                                </Header>
                                             </div>
                                             {
-                                                category.services?
+                                                category.services ?
                                                     <div className={'cards-list'}>
                                                         {this.renderCards(category.services)}
                                                     </div>
                                                     : null
                                             }
-
                                         </div>)
                                 })
                             }
