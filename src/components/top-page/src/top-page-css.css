@@ -1,0 +1,60 @@
+.top-page .latest-services{
+    height: 518px;
+    background: #F58A7C;
+    padding: 60px 0 82px 80px;
+}
+
+.top-page .latest-services .latest-services-header{
+    margin-bottom: 32px;
+}
+
+.top-page .latest-services h2,
+.top-page .category-header h2{
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    display: inline;
+    padding-right: 32px;
+}
+
+.top-page .category-header h2{
+    color: #E84341;
+}
+
+.top-page .latest-services .ui.header.show-more{
+    color: #FFFFFF;
+}
+
+.top-page .cards-list{
+    display: inline-flex;
+}
+
+.main-categories .one-category{
+    padding: 50px 0px 80px 50px;
+}
+
+.main-categories .one-category .category-header{
+    display: table;
+}
+
+.main-categories .one-category .category-header h2,
+.main-categories .one-category .category-header h4{
+    display: table-cell;
+    vertical-align: top;
+}
+
+.main-categories .one-category .category-header h2{
+    padding: 3px 13px 0 14px;
+}
+
+.main-categories .one-category .category-header h4{
+    padding: 8px 5px 0 10px;
+}
+
+.top-page .one-category .category-header{
+    margin-bottom: 25px;
+}
