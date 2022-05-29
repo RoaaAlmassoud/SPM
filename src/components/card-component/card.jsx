@@ -12,14 +12,17 @@ export default class Card extends React.Component {
         }
     }
 
+    openServiceDetails =  () => {
+        this.props.props.history.push(`/${this.props.service.id}`)
+        window.location.reload(true)
+    }
 
     render() {
         let service = this.props.service;
-        console.log('ser: ', service)
         if(!Helper.emptyString(service)){
             return (
-                <div className={'card'}>
-                    <img className={'service-image'} src={'/images/main-images/mask.svg'}/>
+                <div className={'card'} onClick={() => this.openServiceDetails()}>
+                    <img className={'service-image'} src={`https://backend-nichijo.s-pm.co.jp/storage/${service.image}`}/>
                     <div className={'actions'}>
                         <img className={'like-image'} src={'/images/main-images/like.svg'}/>
                         <img className={'plus-image'} src={'/images/main-images/plus.svg'}/>

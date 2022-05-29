@@ -1,0 +1,221 @@
+.service-details-page{
+    padding: 50px 0 20px 80px;
+}
+
+.service-details{
+    background: #FAFAFA;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.service-details .first-img{
+   padding-top: 100px;
+    width: 100%;
+}
+
+.service-details .image-section{
+    width: 70%;
+    margin: auto;
+}
+
+.service-details .image-section .category-btn{
+    float: left;
+    margin-top: 32px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.1em;
+    color: #231815;
+    border-radius: 20px;
+    padding: 11px 20px;
+}
+
+.service-details .image-section .like-section{
+    text-align: right;
+    margin-top: 25px;
+}
+
+.service-details .image-section .like-section img{
+    vertical-align: middle;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.service-details .image-section .like-section .ui.button{
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: #FA7575;
+    padding: 13px 40px;
+}
+
+.service-details .details-section{
+    width: 70%;
+    margin: 50px auto;
+    text-align: left;
+}
+
+.service-details .details-section .name h1{
+    font-size: 30px;
+}
+
+.service-details .details-section .price{
+    margin-top: 50px;
+}
+
+.service-details .details-section .price .ui.button{
+    font-style: normal;
+    padding: 18px 80px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+    color: #231815;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-right: 24px;
+}
+
+.service-details .details-section .points-section{
+    margin-top: 50px;
+}
+
+.service-details .details-section .points-section h3{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    color: #FA7575;
+}
+
+.service-details .details-section .points-section .points-list{
+    margin-top: 20px;
+}
+
+.service-details .details-section .points-section .points-list .single-point{
+    padding: 15px 18px;
+    width: 50%;
+    display: flex;
+    background: #FFFFFF;
+    border: 1px solid #C2C2C2;
+    margin-bottom: 10px;
+}
+
+.service-details .details-section .points-section .points-list .single-point p{
+    font-size: 15px;
+}
+
+.service-details .details-section .points-section .points-list .single-point img{
+    padding-right: 18px;
+}
+
+.service-details .details-section .images .small-images{
+    display: flex;
+    margin-top: 20px;
+}
+
+.service-details .details-section .images .small-images img{
+    width: 26%;
+    margin-right: 20px;
+}
+
+.service-details .details-section .images .small-images img:last-child{
+    width: 15%;
+}
+
+.service-details .details-section .introduction-section{
+    margin-top: 50px;
+}
+
+.service-details .details-section .introduction-section p{
+    font-size: 15px;
+}
+
+.service-details .details-section .introduction-section a{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 160%;
+    text-decoration-line: underline;
+    color: #FA7575;
+}
+
+.service-details .details-section .introduction-section a img{
+    padding-left: 10px;
+    margin-bottom: -4px;
+}
+
+.service-details .details-section .custom-list{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.service-details .details-section .custom-list .ui.button{
+    padding: 18px 80px;
+    background: #FA7575;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 100%;
+    color: #FFFFFF;
+    margin-top: 100px;
+
+}
+
+.service-details .details-section .custom-list .single-custom-item{
+    width: 100%;
+    display: flex;
+    border-top: none;
+    border-bottom: 1px solid #C2C2C2;
+    text-align: left;
+}
+
+.service-details .details-section .custom-list .single-custom-item:first-child{
+    border-top: 1px solid #C2C2C2;
+}
+
+.service-details .details-section .custom-list .single-custom-item h3{
+    width: 30%;
+    padding: 18px;
+    margin-bottom: 0;
+    background: #F6F6F6;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 100%;
+    color: #231815;
+}
+
+.service-details .details-section .custom-list .single-custom-item p{
+    width: 70%;
+    padding: 18px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    color: #231815;
+}
+
+.service-details .details-section .border{
+    border: 5px solid #FFFFFF;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.service-details .details-section .related-services{
+    margin-top: 50px;
+}
+
+.service-details .details-section .related-services .lists{
+    display: flex;
+}
+
+.service-details .details-section .related-services h2{
+    font-size: 25px;
+    margin-top: 0px;
+}

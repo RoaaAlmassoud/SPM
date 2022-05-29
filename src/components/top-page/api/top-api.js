@@ -10,4 +10,7 @@ export default class TopApi {
         return await AxiosApi.call(body, `get-homepage`, 'get');
     };
 
+    searchService = async(body) => {
+        return await AxiosApi.call(body, `search-services`, 'get');
+    };
 }

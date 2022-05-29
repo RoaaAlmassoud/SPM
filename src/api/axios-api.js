@@ -15,10 +15,8 @@ export default class AxiosApi {
         if (accessToken) {
             headers.Authorization = `Bearer ${accessToken}`
         }
-        console.log('headers: ', headers, url, method)
 
         try {
-            console.log('requestBody: ', requestBody)
             const response = await axios[method](url
                 , method === 'get' ? {
                         headers: headers,

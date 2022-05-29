@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 import MainLayout from './components/main-layout/main-layout'
 import TopPage from './components/top-page/src/top-page'
-
+import ServiceDetails from './components/service-details-component/src/service-details'
 //import Logout from './components/logout/logout'
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import AppContext from './context/app-context';
@@ -66,6 +66,8 @@ export default class App extends Component {
               <Switch>
                 <Route exact path="/"
                        render={(props) => <TopPage notify={this.notify} {...props}/>}/>
+                  <Route exact path="/:id"
+                         render={(props) => <ServiceDetails notify={this.notify} {...props}/>}/>
               </Switch>
               <ToastContainer autoClose={5000}/>
             </MainLayout>
