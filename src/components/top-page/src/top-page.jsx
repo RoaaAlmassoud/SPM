@@ -10,6 +10,7 @@ export default class TopPage extends React.Component {
 
     constructor(props) {
         super(props);
+        console.log('props: ', props)
         this.topApi = new TopApi(this);
         let name = props.location.state ? this.props.location.state.name ? this.props.location.state.name : '' : '';
         let categories = props.location.state ? this.props.location.state.categories ? this.props.location.state.categories : '' : '';
@@ -86,6 +87,17 @@ export default class TopPage extends React.Component {
 
     componentDidMount() {
         this.getServices()
+        window.addEventListener('resize', this.changeInnerWidth);
+    }
+
+    changeInnerWidth = () => {
+        this.setState({
+            innerWidth: window.innerWidth
+        })
+    }
+
+    componentWillMount() {
+        this.changeInnerWidth();
     }
 
     renderCards = (services, withoutSlider = false) => {
@@ -106,13 +118,14 @@ export default class TopPage extends React.Component {
 
         return (
 
-            withoutSlider ?
-                <div>
+        //    withoutSlider ?
+                <div className={`${withoutSlider? '':'with-slider'}`}>
                     {cards}
-                </div> :
-                <Slider {...settings}>
-                    {cards}
-                </Slider>
+                </div> 
+                //  :
+                //  <Slider {...settings}>
+                //     {cards}
+                //  </Slider>
 
 
         )
@@ -163,6 +176,10 @@ export default class TopPage extends React.Component {
         )
     };
 
+    aboutPage = () => {
+        this.props.history.push('/about')
+    }
+
     render() {
         let {latestServices, mainCategories, loading, searchServices, categories, categoriesList, name} = this.state;
         return (
@@ -178,7 +195,8 @@ export default class TopPage extends React.Component {
                                         </div>
                                         <div className={'image-section'}>
                                             <img src={'/images/main-images/categories-mobile.svg'}/>
-                                            <img src={'/images/main-images/about-mobile.svg'}/>
+                                            <img src={'/images/main-images/about-mobile.svg'}
+                                            onClick={() => this.aboutPage()}/>
                                         </div>
                                     </>
                                     :
@@ -186,7 +204,10 @@ export default class TopPage extends React.Component {
                                         <div className={'text-section'}>
                                             <p>サブスク管理を</p>
                                             <p>もっと快適に</p>
-                                            <img src={'/images/main-images/about.svg'}/>
+                                            <img 
+                                            src={'/images/main-images/about.svg'}
+                                            onClick={() => this.aboutPage()}
+                                            />
                                         </div>
                                         <div className={'image-section'}>
                                             <img src={'/images/main-images/categories.svg'}/>
@@ -242,7 +263,7 @@ export default class TopPage extends React.Component {
                                     return (
                                         <div className={'one-category'}>
                                             <div className={'category-header'}>
-                                                <img src={`https://backend-nichijo.s-pm.co.jp/storage/${category.category_icon}`}/>
+                                                <img src={`https://bonzuttner.xsrv.jp/spm-back/storage/${category.category_icon}`}/>
                                                 <Header as={'h2'}>
                                                     {category.category_name}
                                                 </Header>

@@ -10,16 +10,18 @@ export default class HelperFunctions {
 
     static getResponseData = (response) => {
         if (this.isEmpty(response)) return null;
-
         let result = {};
 
-        if (response.data && response.status === 200 && response.data.code === 0) {
-            // const firstKey = Object.keys(data);
-            // return data[firstKey];
-            result['data'] = response.data;
+        if (response.status === 200) {
+            if(response.data){
+                result['data'] = response.data.data? response.data.data: response;
+            } else {
+                result['data'] = response
+            }
+
         }
 
-        if (response.data && response.data.code !== 0) {
+        if (response.status !== 200) {
             result = response.data;
 
         }
@@ -50,6 +52,16 @@ export default class HelperFunctions {
             return null
         }
 
+    }
+
+    static downloadCSVFile = (data, filename) => {
+        const element = document.createElement("a")
+        var csv = 'createdDate,name,email,phoneNumber\n';
+        const file = new Blob(data, {type: 'text/csv,charset=utf-8'})
+        element.href = URL.createObjectURL(file)
+        element.download = filename
+        document.body.appendChild(element)
+        element.click()
     }
 
 }

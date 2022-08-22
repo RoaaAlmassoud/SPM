@@ -1,0 +1,184 @@
+.static-container {
+    padding: 50px 80px;
+}
+
+.static-container .ui.breadcrumb {
+    width: 100%;
+    border-bottom: 5px solid #F6F6F6;
+    padding-bottom: 17px;
+}
+
+.static-container .description-section {
+    background: #F8F8F8;
+    width: 88%;
+    margin: 56px auto;
+    text-align: center;
+    padding: 50px 6%;
+}
+
+.static-container.custom .description-section {
+    padding: 50px 8%
+}
+
+.static-container .description-section h1 {
+    margin-bottom: 40px;
+    font-size: 25px;
+    color: #231815;
+}
+
+.static-container .description-section .details-section {
+    text-align: left;
+}
+
+.static-container .description-section .details-section span {
+    font-weight: 500;
+    font-family: Noto-Medium;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
+
+.static-container .description-section .details-section p {
+    font-weight: 500;
+    font-family: Noto-Medium;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    color: #000000;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.static-container.custom .description-section .details-section p {
+    line-height: 24px;
+    letter-spacing: 0.2em;
+}
+
+.static-container .description-section .contact-section {
+    text-align: left;
+    background: #FFFFFF;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.static-container .description-section .contact-section h1 {
+    font-family: Noto-Bold;
+    /* font-weight: 700; */
+    font-size: 25px;
+    line-height: 100%;
+    color: #231815;
+    margin-bottom: 20px;
+}
+
+.static-container .description-section .contact-section p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.static-container .description-section .contact-section a {
+    font-weight: 500;
+    font-family: Noto-Medium;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.07em;
+    text-decoration-line: underline;
+    color: #2665C3;
+    cursor: pointer;
+}
+
+.static-container .description-section .details-section .row-section {
+    display: flex;
+    text-align: center;
+}
+
+.static-container .description-section .details-section .row-section p {
+    width: 50%;
+}
+
+.static-container .description-section .details-section .row-section p.first {
+    font-family: Noto-Black;
+    font-weight: 900;
+}
+
+.static-container .description-section .details-section .row-section p.second,
+.static-container .description-section .details-section .row-section p.second p {
+    font-weight: 200;
+    font-size: 15px;
+    text-align: left;
+}
+
+.static-container .description-section .details-section .row-section p.second p {
+    width: 100%;
+    margin: 0;
+}
+
+.static-container .description-section .buttons-section {
+    margin: 100px auto 10px;
+}
+
+.static-container .description-section .buttons-section .ui.button {
+    display: block;
+    margin: 30px auto;
+    height: 50px;
+}
+
+.static-container .description-section .buttons-section .ui.button:first-child {
+    width: 32%;
+    font-family: Noto-Bold;
+    /* font-weight: 700; */
+    font-size: 15px;
+    line-height: 100%;
+    color: #FFFFFF;
+    background: #FA7575;
+    border-radius: 4px;
+}
+
+.static-container .description-section .buttons-section .ui.button:last-child {
+    width: 32%;
+    font-style: normal;
+    font-family: Noto-Bold;
+    /* font-weight: 700; */
+    font-size: 15px;
+    line-height: 100%;
+    border-radius: 4px;
+}
+
+
+@media (max-width: 768px) {
+    .static-container {
+        padding: 0;
+    }
+
+    .static-container .description-section {
+        background: #F8F8F8;
+        width: 100%;
+        margin: 40px auto;
+        text-align: center;
+        padding: 41px 36px;
+    }
+
+    .static-container .description-section h1 {
+        margin-bottom: 0;
+    }
+
+    /* .static-container .ui.breadcrumb {
+        padding: 25px 0 20px 16px;
+    } */
+
+    .register-container .ui.form .register-options img{
+        width: 100%;
+        margin: 0 0 1px 0;
+        height: 44px;
+    }
+
+    .register-container{
+        padding: 0;
+    }
+
+    .register-container .ui.form{
+        width: 100%;
+        padding: 40px 36px;
+            margin: 40px auto;
+    }
+}

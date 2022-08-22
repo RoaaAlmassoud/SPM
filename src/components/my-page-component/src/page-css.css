@@ -1,0 +1,2230 @@
+.page-container {
+    padding: 50px 80px;
+}
+
+.loader-row {
+    position: relative;
+}
+
+.loader-row .ui.loader.active {
+    position: absolute;
+    margin: 30px auto 10px;
+    width: 100% !important;
+    text-align: center;
+}
+
+.page-container .ui.breadcrumb {
+    width: 100%;
+    border-bottom: 5px solid #F6F6F6;
+    padding-bottom: 17px;
+}
+
+.page-container .tabs-section .ui.secondary.pointing.menu {
+    border-bottom: 0.5px solid #949494;
+    margin-top: 50px;
+}
+
+.page-container .tabs-section .ui.secondary.pointing.menu .active.item {
+    border-color: transparent;
+    background: #FFD2D2;
+}
+
+.page-container .tabs-section .ui.secondary.pointing.menu .item {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    display: block;
+    margin-bottom: 0;
+}
+
+.page-container .tabs-section .ui.secondary.pointing.menu .item h4 {
+    font-family: Noto-Bold;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 94%;
+    color: #231815;
+}
+
+.page-container .tabs-section .ui.bottom.attached.segment.active.tab {
+    border: none;
+    padding: 0;
+    margin-top: 50px;
+}
+
+.my-page .page-details .page-numbers {
+    background: #F8F8F8;
+    padding: 30px 30px 24px 30px;
+}
+
+.my-page .page-details .page-numbers p,
+.my-page .page-details .page-numbers p span {
+    font-family: Noto-Bold;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 100%;
+    color: #231815;
+
+}
+
+.my-page .page-details .page-numbers p span:first-child {
+    margin-left: 35px;
+    margin-right: 20.5px;
+}
+
+.my-page .page-details .page-numbers p span:last-child {
+    margin-left: 17px;
+}
+
+.my-page .page-details .page-numbers .numbers-section {
+    display: flex;
+    margin-top: 54px;
+}
+
+.my-page .page-details .page-numbers .numbers-section p {
+    margin-right: 40px;
+}
+
+.my-page .page-details .page-numbers .numbers-section p span {
+    margin-left: 20px;
+    font-style: normal;
+    font-family: Noto-Bold;
+    font-size: 30px;
+    line-height: 100%;
+    color: #FA7575;
+}
+
+.my-page .page-details .add-service-section {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.my-page .page-details .add-service-section .ui.button {
+    font-style: normal;
+    font-family: Noto-Bold;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: #FA7575;
+    border-radius: 4px;
+    padding: 14px 45px 14px 15px;
+}
+
+.custom-services-detail .add-service-form .action-section .ui.button {
+    font-style: normal;
+    font-family: Noto-Bold;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: #FA7575;
+    border-radius: 4px;
+    padding: 14px 35px 14px 15px;
+    margin-left: 55px;
+    margin-top: 26px;
+}
+
+.custom-services-detail .add-service-form .action-section .ui.button p span {
+    margin-right: 29px;
+    font-size: 25px;
+    font-family: Noto-Meium;
+}
+
+.my-page .page-details .add-service-section .ui.button p span {
+    margin-right: 19px;
+    font-size: 25px;
+    font-family: Noto-Meium;
+}
+
+.my-page .page-details .my-services {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.my-page .page-details .my-services h2 {
+    font-family: Noto-Bold;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 100%;
+    color: #231815;
+}
+
+.my-page .add-service {
+    width: 83%;
+    border-radius: 10px;
+    background: #F8F8F8;
+    margin: auto;
+    padding: 8% 10.5%;
+}
+
+.my-page .add-service .select-images {
+    background: #FFFFFF;
+    border: 1px dashed #2F2725;
+    border-radius: 5px;
+    padding: 5.5% 19%;
+    text-align: center;
+}
+
+.my-page .add-service .select-images img {
+    margin-bottom: 18px;
+}
+
+.my-page .add-service .select-images .first-header {
+    font-family: Noto-Bold;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 0.1em;
+    color: #231815;
+    margin-bottom: 0px;
+}
+
+.my-page .add-service .select-images .second-header {
+    font-family: Noto-Bold;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 160%;
+    letter-spacing: 0.1em;
+    color: #231815;
+}
+
+.my-page .add-service .select-images .select-section p:first-child,
+.custom-services-detail .add-service-form .select-section p:first-child {
+    font-style: normal;
+    font-family: Noto-Bold;
+    font-size: 15px;
+    line-height: 160%;
+    letter-spacing: 0.1em;
+    color: #231815;
+    margin-bottom: 0px;
+}
+
+.my-page .add-service .select-images .select-section .wrapper,
+.custom-services-detail .add-service-form .select-section .wrapper,
+.add-service-modal.ui.modal .select-section .wrapper {
+    position: relative;
+}
+
+.add-service-modal.ui.modal .select-section .wrapper p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    font-family: Noto-Regular;
+    text-align: left;
+    text-decoration-line: underline;
+    color: #0077CE;
+}
+
+.custom-services-detail .add-service-form .select-section .wrapper p {
+    font-style: normal;
+    font-family: Noto-Regular;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #0077CE;
+    margin-left: 40px;
+    margin-top: 35px;
+}
+
+.my-page .add-service .select-images .select-section .wrapper p {
+    font-style: normal;
+    font-family: Noto-Bold;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 0.1em;
+    color: #3672CB;
+}
+
+.my-page .add-service .select-images .select-section .wrapper input[type=file],
+.custom-services-detail .add-service-form .select-section .wrapper input[type=file],
+.add-service-modal.ui.modal .select-section .wrapper input[type=file] {
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.custom-services-detail .add-service-form .select-section .service-image {
+    width: 100%;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+.my-page .add-service .ui.form {
+    margin-top: 50px;
+}
+
+.my-page .add-service .ui.form .field {
+    margin-bottom: 20px;
+}
+
+.my-page .add-service .ui.form .field>.ui.label {
+    padding: 0 0 10px 0;
+    background: transparent;
+    font-style: normal;
+    font-family: Noto-Medium;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    color: #373737;
+    width: 100%;
+}
+
+.my-page .add-service .ui.form .field .ui.selection.dropdown {
+    padding: 17px 20px 17px 14px;
+    font-size: 15px;
+    width: 50%;
+    background: #FFFFFF;
+    border: 0.5px solid #373737;
+    border-radius: 5px;
+}
+
+.my-page .add-service .ui.form .field .ui.dropdown>.dropdown.icon {
+    /* font-family: none; */
+    padding-top: 17px;
+}
+
+.my-page .add-service .ui.form .field .ui.dropdown>.dropdown.icon:before {
+    /* content: "\f107"; */
+}
+
+.my-page .add-service .ui.form .field .ui.selection.dropdown .menu>.item {
+    width: 100% !important;
+}
+
+.my-page .add-service .ui.form .field .ui.selection.dropdown .menu>.item,
+.my-page .add-service .ui.form .field .ui.input {
+    font-family: Noto-Medium;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    width: 77%;
+}
+
+.my-page .add-service .ui.form .field .ui.input input {
+    width: 70%;
+    padding: 15.5px 20px 15.5px 14px;
+    background: #FFFFFF;
+    border: 0.5px solid #373737;
+    border-radius: 5px;
+}
+
+.my-page .add-service .ui.form .field textarea {
+    padding: 18px 20px 18px 14px;
+    font-family: Noto-Medium;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    background: #FFFFFF;
+    border: 0.5px solid #373737;
+    border-radius: 5px;
+}
+
+.my-page .add-service .ui.form .field.three-points-field .ui.input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.my-page .add-service .ui.form .field.three-points-field .ui.input:last-child {
+    margin-bottom: 30px;
+}
+
+.my-page .add-service .ui.form .default-images-section {
+    margin-top: 18px;
+    margin-bottom: 30px;
+}
+
+.my-page .add-service .ui.form .default-images-section .one-image {
+    width: 31.5%;
+    margin-right: 19.88px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.my-page .add-service .ui.form .default-images-section .one-image img:first-child {
+    position: absolute;
+    right: -12px;
+    top: -12px;
+    cursor: pointer;
+}
+
+.my-page .add-service .ui.form .default-images-section .one-image img:nth-child(2) {
+    width: 100%;
+    height: 108px;
+    object-fit: cover
+}
+
+.my-page .add-service .ui.form .default-images-section .one-image:nth-child(3) {
+    margin-right: 0;
+}
+
+.my-page .add-service .ui.form .custom-fields-section {
+    margin-bottom: 37px;
+}
+
+.my-page .add-service .ui.form .custom-fields-section .one-custom {
+    background: #EBEBEB;
+    padding: 16px 13px 18px 20px;
+    margin-bottom: 20px
+}
+
+.my-page .add-service .ui.form .custom-fields-section .one-custom .close-img {
+    display: block;
+    float: right;
+    margin-top: -3px;
+    cursor: pointer;
+}
+
+.my-page .add-service .ui.form .custom-fields-section .one-custom .ui.input {
+    margin-left: 40px;
+    width: 57.7%;
+}
+
+.my-page .add-service .ui.form .custom-fields-section .one-custom .value-section {
+    display: inline-flex;
+    margin-top: 19px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.my-page .add-service .ui.form .custom-fields-section .one-custom .value-section img {
+    margin-right: 20px;
+    margin-top: 6px;
+}
+
+.my-page .add-service .ui.form .custom-fields-section .one-custom .value-section textarea {
+    width: 87%;
+}
+
+.my-page .add-service .ui.form .custom-fields-section .add-section {
+    margin-top: -6px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.my-page .add-service .ui.form .custom-fields-section .add-section img {
+    margin-right: -6px;
+}
+
+.my-page .add-service .ui.form .ui.radio.checkbox {
+    width: 15%;
+}
+
+.my-page .add-service .ui.form .ui.radio.checkbox label {
+    font-size: 15px;
+    font-style: normal;
+    font-family: Noto-Medium;
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    color: #000000;
+}
+
+.my-page .add-service .ui.form .ui.radio.checkbox label:before {
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+}
+
+.my-page .add-service .ui.form .ui.radio.checkbox label:after {
+    top: -4px;
+    left: -4px;
+    width: 30px;
+    height: 30px;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    border: 8px solid #2665C3;
+    background-color: transparent;
+}
+
+.my-page .add-service .ui.form .action-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.my-page .add-service .ui.form .action-section .ui.button {
+    padding: 2.21% 18.5%;
+    font-style: normal;
+    font-family: Noto-Bold;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 100%;
+    color: #FFFFFF;
+    background: #FA7575;
+    border-radius: 4px;
+}
+
+.my-page .my-services {
+    margin-top: 50px;
+}
+
+.my-page .my-services .lists {
+    display: flex;
+}
+
+.my-page .my-services h2 {
+    font-size: 25px;
+    margin-top: 0px;
+}
+
+.my-page .add-service .service-image {
+    position: relative;
+    width: 100%
+}
+
+.my-page .add-service .service-image img:last-child {
+    width: 60%;
+}
+
+.my-page .add-service .service-image img:first-child {
+    cursor: pointer;
+    position: absolute;
+    top: -14px;
+    right: 84px;
+}
+
+.users-list,
+.update-account {
+    display: inline-flex;
+    width: 100%;
+}
+
+.users-list .left-side {
+    width: 26%;
+    background: #F8F8F8;
+    padding: 40px;
+    border-radius: 10px;
+    margin-right: 50px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.users-list .left-side p {
+    font-family: Noto-Bold;
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 100%;
+    color: #231815;
+}
+
+.update-account .left-side {
+    width: 26%;
+    background: #F8F8F8;
+    padding: 40px;
+    border-radius: 10px;
+    height: fit-content;
+    margin-right: 50px;
+}
+
+.users-list .left-side a,
+.update-account .left-side a {
+    display: block;
+    font-style: normal;
+    font-family: Notto-Medium;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    text-decoration-line: underline;
+    color: #2665C3;
+    margin-bottom: 42px;
+    cursor: pointer;
+}
+
+.users-list .left-side a:last-child,
+.update-account .left-side a:last-child {
+    margin-bottom: 0px;
+}
+
+.users-list .right-side {
+    width: 100%;
+    padding: 50px;
+    background: #F8F8F8;
+    border-radius: 10px;
+}
+
+.users-list .right-side .service-users,
+.users-list .right-side .service-users .user-number {
+    display: inline-flex;
+    width: 100%;
+}
+
+.users-list .right-side .service-users .user-number {
+    justify-content: end;
+}
+
+.users-list .right-side .service-users h2 {
+    font-weight: 700;
+    font-family: Noto-Bold;
+    font-size: 25px;
+    line-height: 100%;
+    color: #231815;
+    width: 100%;
+}
+
+.users-list .right-side .service-users .user-number h3 {
+    font-weight: 700;
+    font-family: Noto-Bold;
+    font-size: 20px;
+    line-height: 100%;
+    color: #231815;
+    margin-right: 15px;
+}
+
+.users-list .right-side .service-users .user-number h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+    font-family: Noto-Bold;
+    color: #FA7575;
+    margin-top: -5px;
+}
+
+.users-list .right-side .action-buttons {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.users-list .right-side .action-buttons,
+.users-list .right-side .action-buttons .search-section {
+    width: 100%;
+    display: inline-flex;
+}
+
+.users-list .right-side .action-buttons .search-section {
+    justify-content: end;
+}
+
+.users-list .right-side .action-buttons .ui.button {
+    font-style: normal;
+    font-family: Noto-Bold;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 100%;
+    height: 50px;
+    color: #FFFFFF;
+    background: #FA7575;
+    border-radius: 4px;
+    width: 63.5%;
+}
+
+
+.users-list .right-side .action-buttons .ui.search {
+    font-style: normal;
+    font-family: Noto-Medium;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+    width: 66.5%;
+}
+
+.users-list .right-side .action-buttons .ui.search .ui.input {
+    background: #FFFFFF;
+    border: 0.5px solid #373737;
+    border-radius: 5px;
+    height: 50px;
+    width: 100%;
+}
+
+.users-list .right-side .action-buttons .ui.search .ui.input input {
+    border-radius: 5px;
+    border: none;
+}
+
+.users-list .right-side .list-section .ui.fixed.selectable.unstackable.table {
+    background: #FFFFFF;
+    border: 0.5px solid #111111;
+    border-radius: 4px;
+}
+
+.users-list .right-side .list-section .ui.fixed.selectable.unstackable.table thead tr>th {
+    background: #EBEBEB;
+    border-bottom: 0.5px solid #111111;
+    font-family: Noto-Medium;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    color: #373737;
+    padding: 18px;
+}
+
+.users-list .right-side .list-section .ui.fixed.selectable.unstackable.table tr {
+    cursor: pointer;
+}
+
+.users-list .right-side .list-section .ui.fixed.selectable.unstackable.table tr td {
+    font-weight: 400;
+    font-family: Noto-Regular;
+    font-size: 15px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: #2665C3;
+    border-bottom: 0.5px solid #949494;
+    padding: 20px 20px 18px 18px;
+}
+
+.update-account .right-side {
+    width: 100%;
+}
+
+.update-account .right-side .first-form,
+.update-account .right-side .second-form,
+.update-account .right-side .third-form {
+    padding: 50px;
+    background: #F8F8F8;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.update-account .right-side .first-form,
+.update-account .right-side .second-form,
+.update-account .right-side .third-form {
+    margin-bottom: 20px;
+}
+
+.update-account .right-side .second-form .ui.vertical.accordion.ui.menu {
+    width: 70%;
+    background: #FFFFFF;
+    border: 0.5px solid #373737;
+    border-radius: 4px;
+}
+
+.update-account .right-side .second-form .ui.vertical.accordion.ui.menu .item {
+    background: #EBEBEB;
+    padding: 0;
+}
+
+.update-account .right-side .second-form .ui.vertical.accordion.ui.menu .title {
+    font-style: normal;
+    font-weight: 500;
+    font-family: Noto-Medium;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    color: #373737;
+    background: #EBEBEB;
+    padding: 18px;
+    border-bottom: 0.5px solid #111111;
+}
+
+.update-account .right-side .second-form .ui.vertical.accordion.ui.menu .content {
+    background: #FFFFFF;
+    padding: 20px 18px;
+    border-bottom: 0.5px solid #949494;
+}
+
+.update-account .right-side .second-form .ui.vertical.accordion.ui.menu .content .item-list {
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 0.5px solid #949494;
+}
+
+.update-account .right-side .second-form .ui.vertical.accordion.ui.menu .content .item-list:first-child {
+    padding-top: 0px;
+}
+
+.update-account .right-side .second-form .ui.vertical.accordion.ui.menu .content .item-list:last-child {
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+
+.update-account .right-side .second-form .ui.vertical.accordion.ui.menu .content .item-list .left-text span:last-child {
+    margin-right: 25px;
+    margin-left: 15px;
+}
+
+
+.update-account .right-side .second-form .ui.vertical.accordion.ui.menu .content .item-list .right-text {
+    width: 100%;
+}
+
+
+.update-account .right-side .second-form .ui.vertical.accordion.ui.menu .content .item-list span {
+    font-style: normal;
+    font-family: Noto-Regular;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    color: #373737;
+}
+
+.update-account .right-side .second-form .ui.vertical.accordion.ui.menu .content .item-list .left-text {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.update-account .right-side .third-form .register-options img {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.update-account .right-side .third-form .first-text {
+    margin-bottom: 20px;
+}
+
+.update-account .right-side .third-form .third-text {
+    margin-top: 20px;
+}
+
+
+.update-account .right-side .third-form p {
+    margin-bottom: 10px;
+    font-family: Noto-Bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.06em;
+    color: #231815;
+}
+
+.update-account .right-side .third-form span {
+    font-family: Noto-Medium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 0.1em;
+    color: #231815;
+}
+
+.update-account .right-side .third-form .action-section .ui.button {
+    font-style: normal;
+    font-family: Noto-Bold;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 100%;
+    color: #231815;
+    background: #EBEBEB;
+    border-radius: 4px;
+    width: 40%;
+    margin-top: 67px;
+    height: 50px;
+}
+
+.update-account .right-side h2 {
+    font-style: normal;
+    font-family: Noto-Bold;
+    font-size: 25px;
+    line-height: 100%;
+    color: #231815;
+    margin-bottom: 50px;
+}
+
+.update-account .right-side .ui.form .fields-section .ui.label {
+    background: transparent;
+    padding-left: 0;
+    padding-bottom: 10px;
+    font-family: Noto-Medium;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    color: #231815;
+}
+
+.update-account .right-side .ui.form .field .ui.input,
+.update-account .right-side .ui.form .fields .field .ui.input,
+.update-account .right-side .ui.form .wide.field .ui.input {
+    background: #FFFFFF;
+    border: 0.5px solid #231815;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+}
+
+.update-account .right-side .ui.form .field .ui.input input,
+.register-container .ui.form .fields .field .ui.input input,
+.register-container .ui.form .wide.field .ui.input input {
+    padding: 15px 10px 15px 14px;
+}
+
+.update-account .right-side .ui.form .dob-fields {
+    width: 70%;
+}
+
+.update-account .right-side .ui.form .ui.radio.checkbox {
+    width: 15%;
+}
+
+.update-account .right-side .ui.form .ui.radio.checkbox label {
+    font-size: 15px;
+    font-style: normal;
+    font-family: Noto-Medium;
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    color: #000000;
+}
+
+.update-account .right-side .ui.form .ui.radio.checkbox label:before {
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+}
+
+.update-account .right-side .ui.form .ui.radio.checkbox label:after {
+    top: -4px;
+    left: -4px;
+    width: 30px;
+    height: 30px;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    border: 8px solid #2665C3;
+    background-color: transparent;
+}
+
+.update-account .right-side .ui.form .field {
+    width: 60%;
+}
+
+.update-account .right-side .ui.form .field.address-field .ui.input {
+    margin-bottom: 10px;
+}
+
+.update-account .right-side .ui.form .field.address-field .ui.input.post-code-input {
+    width: 38%;
+    display: block;
+}
+
+.update-account .right-side .ui.form .field.address-field .ui.input.post-code-input input {
+    width: 100%;
+}
+
+.update-account .right-side .ui.form .action-section .ui.button {
+    font-style: normal;
+    font-family: Noto-Bold;
+    /* font-weight: 700; */
+    font-size: 15px;
+    line-height: 100%;
+    color: #FFFFFF;
+    background: #FA7575;
+    border-radius: 4px;
+    width: 23.1%;
+    height: 50px;
+    margin-top: 40px;
+}
+
+.wish-list .my-services h2 {
+    font-style: normal;
+    font-family: Noto-Bold;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 100%;
+    color: #231815;
+}
+
+.wish-list .my-services .lists {
+    margin-top: 50px;
+}
+
+.wish-list .my-services .lists .card {
+    margin-bottom: 50px;
+}
+
+.wish-list .my-services .lists .card:first-child {
+    margin-left: 0;
+}
+
+.wish-list .my-services .lists .card:nth-child(4) {
+    margin-right: 0;
+}
+
+.update-account.user .left-side a {
+    color: #231815;
+}
+
+.custom-services .custom-services-detail {
+    margin-top: 100px;
+}
+
+.custom-services .custom-services-detail .add-service-form {
+    margin-top: 40px;
+    display: flex;
+}
+
+.custom-services .custom-services-detail .add-service-form .field>.ui.label,
+.add-service-modal.ui.modal .ui.form .field>.ui.label {
+    font-style: normal;
+    font-family: Noto-Medium;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    color: #231815;
+    background: transparent;
+    padding: 0;
+    padding: 0 0 10px 0;
+}
+
+.custom-services .custom-services-detail .add-service-form .fields {
+    width: 50%;
+}
+
+.custom-services .custom-services-detail .add-service-form .fields .field:first-child {
+    width: 63.9%;
+    margin-right: 26px;
+}
+
+.custom-services .custom-services-detail .add-service-form .field .ui.input,
+.add-service-modal.ui.modal .ui.form .field .ui.input {
+    font-family: Noto-Medium;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    width: 77%;
+}
+
+.custom-services .custom-services-detail .add-service-form .field .ui.input input,
+.add-service-modal.ui.modal .ui.form .field .ui.input input {
+    width: 70%;
+    padding: 15.5px 20px 15.5px 14px;
+    background: #FFFFFF;
+    border: 0.5px solid #231815;
+    border-radius: 5px;
+}
+
+.custom-services .services-list {
+    margin-top: 36px;
+}
+
+.custom-services .services-list .ui.grid .row .column {
+    display: flex;
+    margin-bottom: 34.53px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-right: 26px;
+    width: 47.9% !important;
+    padding-left: 0;
+    height: 125px;
+    padding-right: 17px;
+}
+
+.custom-services .services-list .ui.grid .row .column .left-section {
+    width: 49%;
+    margin-right: 25.05px;
+}
+
+.custom-services .services-list .ui.grid .row .column .left-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.custom-services .services-list .ui.grid .row .column .right-section {
+    margin-top: 24px;
+    width: 47%;
+    position: relative;
+}
+
+.custom-services .services-list .ui.grid .row .column .right-section .action-section {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.custom-services .services-list .ui.grid .row .column .right-section .action-section img {
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.custom-services .services-list .ui.grid .row .column .right-section .action-section {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.custom-services .services-list .ui.grid .row .column .right-section p:first-child {
+    font-style: normal;
+    font-family: Noto-Bold;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.06em;
+    color: #231815;
+}
+
+.custom-services .services-list .ui.grid .row .column .right-section p:nth-child(2) {
+    font-style: normal;
+    font-family: Noto-Bold;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    color: #231815;
+}
+
+.add-service-modal.ui.modal,
+.delete-service-modal.ui.modal,
+.user-download-modal.ui.modal {
+    border-radius: 20px;
+    width: 55.556%;
+    top: 85px;
+    height: fit-content
+}
+
+.user-download-modal.ui.modal .content .close-section {
+    text-align: right;
+    cursor: pointer;
+}
+
+.user-download-modal.ui.modal .content .user-details .user-info {
+    width: 70%;
+    margin: auto;
+    border: 1px solid #949494;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.user-download-modal.ui.modal .content .user-details .user-info .item {
+    display: flex;
+    padding: 0;
+    border-bottom: 1px solid #949494;
+    min-height: 50px;
+}
+
+.user-download-modal.ui.modal .content .user-details .user-info .item:last-child {
+    border-bottom: none;
+}
+
+.user-download-modal.ui.modal .content .user-details .user-info .item:last-child .last-text p {
+    margin-bottom: 0px;
+    background: transparent;
+    padding: 0;
+    border-left: none;
+    font-size: 15px;
+    font-family: Noto-Regular;
+}
+
+.user-download-modal.ui.modal .content .user-details .user-info .item p:first-child {
+    width: 40.6%;
+    padding: 20px 10px 14px 17px;
+    font-style: normal;
+    font-family: Noto-Bold;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    color: #373737;
+    margin-bottom: 0;
+    background: #efefef;
+}
+
+.user-download-modal.ui.modal .content .user-details .user-info .item p:last-child {
+    width: 59.4%;
+    padding: 17px;
+    font-style: normal;
+    font-family: Noto-Regular;
+    font-size: 15px;
+    line-height: 100%;
+    color: #373737;
+    margin-bottom: 0;
+    border-left: 1px solid #949494;
+}
+
+.user-download-modal.ui.modal .content .action-section {
+    text-align: center;
+    margin-bottom: 67px;
+}
+
+.user-download-modal.ui.modal .content .action-section .ui.button .delete-service-modal.ui.modal .content {
+    padding: 120px;
+}
+
+.delete-service-modal.ui.modal .content .header-text {
+    font-style: normal;
+    font-family: Noto-Medium;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #000000;
+    margin-bottom: 74px;
+}
+
+.delete-service-modal.ui.modal .content .actions-section {
+    text-align: center;
+}
+
+.delete-service-modal.ui.modal .content .actions-section .ui.button:first-child {
+    background: #FA7575;
+    font-family: Noto-Bold;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+    width: 36.1%;
+    margin-bottom: 20px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.delete-service-modal.ui.modal .content .actions-section .ui.button:last-child {
+    background: #EBEBEB;
+    font-family: Noto-Bold;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #231815;
+    width: 36.1%;
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+.add-service-modal.ui.modal .content {
+    padding: 50px 15% !important;
+}
+
+.add-service-modal.ui.modal .content .header-text {
+    text-align: center;
+    font-family: Noto-Bold;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.add-service-modal.ui.modal .ui.form .field>.ui.label {
+    width: 100%;
+}
+
+.add-service-modal.ui.modal .ui.form .field:first-child .ui.input {
+    width: 98.6%;
+}
+
+.add-service-modal.ui.modal .ui.form .field:nth-child(2) .ui.input {
+    width: 36%;
+}
+
+
+.add-service-modal.ui.modal .ui.form .field:first-child .ui.input input {
+    width: 100%;
+}
+
+.add-service-modal.ui.modal .ui.form .field {
+    margin-bottom: 30px;
+}
+
+.add-service-modal.ui.modal .service-image {
+    margin-top: 50px;
+}
+
+.add-service-modal.ui.modal .service-image img {
+    width: 31%;
+}
+
+.add-service-modal.ui.modal .actions-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.add-service-modal.ui.modal .actions-section .ui.button {
+    background: #FA7575;
+    font-family: Noto-Bold;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+    width: 36%;
+    margin-bottom: 20px;
+}
+
+.add-service-modal.ui.modal .actions-section p {
+    font-style: normal;
+    font-family: Noto-Bold;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #231815;
+    cursor: pointer;
+}
+
+.add-service-modal.ui.modal>:last-child,
+.delete-service-modal.ui.modal>:last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.add-service-modal.ui.modal>.icon:first-child+*,
+.add-service-modal.ui.modal>:first-child:not(.icon),
+.delete-service-modal.ui.modal>.icon:first-child+*,
+.delete-service-modal.ui.modal>:first-child:not(.icon) {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.delete-account-modal.ui.modal {
+    top: 85px;
+    width: 55.59%;
+}
+
+.delete-account-modal.ui.modal .content {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.delete-account-modal.ui.modal .header-section {
+    margin-bottom: 50px;
+}
+
+.delete-account-modal.ui.modal .header-text {
+    font-size: 20px;
+    font-family: Noto-Medium;
+    line-height: 120%;
+}
+
+.delete-account-modal.ui.modal .action-section .ui.button {
+    width: 26.4%;
+    padding: 17.5px
+}
+
+.delete-account-modal.ui.modal .action-section .ui.button:first-child {
+    margin-right: 20px;
+}
+
+@media (max-width: 1366px) {
+    .my-page .add-service .ui.form .default-images-section .one-image {
+        width: 30%;
+    }
+}
+
+@media (max-width: 1224px) {
+    .delete-service-modal.ui.modal .content {
+        padding: 60px 10px;
+    }
+
+    .delete-service-modal.ui.modal .content .actions-section .ui.button {
+        width: 46% !important;
+    }
+
+    .update-account .left-side {
+        margin-right: 10px;
+        padding: 40px 20px;
+    }
+
+    .users-list .left-side {
+        width: 30%;
+        padding: 40px 10px;
+        margin-right: 10px;
+    }
+
+    .users-list .right-side {
+        padding: 40px 20px;
+    }
+
+    .delete-account-modal.ui.modal .action-section .ui.button {
+        width: fit-content;
+    }
+
+    .my-page .add-service {
+        width: 95%;
+    }
+
+    .my-page .add-service .ui.form .default-images-section .one-image img:first-child {
+        right: -9px;
+        top: -9px;
+        width: 22px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .page-container {
+        padding: 50px 20px;
+    }
+
+    .custom-services .services-list .ui.grid .row .column {
+        margin-left: 14px;
+    }
+
+    .custom-services .custom-services-detail .add-service-form .fields .field {
+        width: 50% !important;
+        margin-right: 0px !important;
+    }
+
+    .custom-services-detail .add-service-form .action-section .ui.button {
+        margin-left: 15px;
+    }
+
+    .custom-services-detail .add-service-form .select-section .wrapper p {
+        margin-left: 25px;
+    }
+
+    .update-account .right-side {
+        width: 70%;
+    }
+
+    .update-account .right-side .ui.form .dob-fields {
+        width: 30%;
+    }
+
+    .update-account .right-side .ui.form .ui.radio.checkbox {
+        width: 22%;
+    }
+
+    .update-account .right-side .ui.form .action-section .ui.button {
+        width: fit-content;
+    }
+
+    .update-account .right-side .second-form .ui.vertical.accordion.ui.menu {
+        width: 100%;
+    }
+
+    .update-account .right-side .third-form .action-section .ui.button {
+        width: fit-content;
+    }
+}
+
+@media (max-width: 768px) {
+    .users-list .mobile-users-list {
+        width: 100%;
+    }
+
+    .users-list .mobile-users-list p {
+        text-align: center;
+        margin-bottom: 19px;
+        font-style: normal;
+        font-family: Noto-Bold;
+        font-size: 18px;
+        line-height: 100%;
+        color: #231815;
+    }
+
+    .users-list .mobile-users-list .ui.fluid.accordion.service-accordion {
+        margin-right: 16px;
+        margin-left: 16px;
+        width: 95%;
+        border: none;
+    }
+
+    .users-list .mobile-users-list .ui.fluid.accordion.service-accordion .one-service {
+        background: #FFFFFF;
+        border: 1px solid #CDCDCD;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .users-list .mobile-users-list .ui.accordion.service-accordion .title:not(.ui) {
+        background: #FFFFFF;
+        border-bottom: none;
+        border-radius: 10px;
+        font-style: normal;
+        font-size: 15px;
+        line-height: 100%;
+        letter-spacing: 0.1em;
+        color: #231815;
+        padding: 17.5px 20px;
+    }
+
+    .users-list .mobile-users-list .service-accordion.ui.accordion .title img {
+        padding-top: 4px;
+    }
+
+    .users-list .mobile-users-list .service-accordion.ui.accordion .title.active img {
+        content: none;
+    }
+
+    .users-list .mobile-users-list .ui.accordion.service-accordion .title.active {
+        background: #FFFFFF !important;
+        font-family: Noto-Medium;
+    }
+
+    .users-list .mobile-users-list .ui.fluid.accordion.service-accordion .one-service .content.active {
+        position: relative;
+        padding: 40px 16px 20px !important;
+        text-align: center;
+    }
+
+    .users-list .mobile-users-list .ui.fluid.accordion.service-accordion .one-service .content.active .user-number {
+        display: inline-flex;
+    }
+
+    .users-list .mobile-users-list .ui.fluid.accordion.service-accordion .one-service .content.active .user-number h3 {
+        font-style: normal;
+        font-family: Noto-Bold;
+        font-size: 18px;
+        line-height: 100%;
+        color: #231815;
+        margin-bottom: 0px;
+        margin-right: 20px;
+        margin-top: 4px;
+    }
+
+    .users-list .mobile-users-list .ui.fluid.accordion.service-accordion .one-service .content.active .user-number h1 {
+        font-style: normal;
+        font-family: Noto-Bold;
+        font-size: 24px;
+        line-height: 100%;
+        color: #FA7575;
+        margin-top: 0px;
+    }
+
+    .users-list .mobile-users-list .ui.fluid.accordion.service-accordion .one-service .content.active .action-buttons .ui.button {
+        height: 44px;
+        font-size: 14px;
+        width: 99%;
+        margin: 23px auto 20px;
+    }
+
+    .users-list .mobile-users-list .ui.fluid.accordion.service-accordion .one-service .content.active .action-buttons .search-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .users-list .mobile-users-list .ui.fluid.accordion.service-accordion .one-service .content.active .action-buttons .ui.search{
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+
+    .users-list .mobile-users-list .ui.fluid.accordion.service-accordion .one-service .content.active .action-buttons .ui.search .ui.input {
+        background: #FFFFFF;
+        border: 0.5px solid #373737;
+        border-radius: 4px;
+        height: 40px;
+        width: 100%;
+    }
+
+    .users-list .mobile-users-list .ui.fluid.accordion.service-accordion .one-service .content.active .action-buttons .ui.search .ui.input input {
+        border-radius: 5px;
+        border: none;
+        font-family: Noto-Medium;
+        font-size: 15px;
+        line-height: 100%;
+        background: #F1F1F1;
+    }
+
+    .users-list .mobile-users-list .list-section .ui.fixed.selectable.unstackable.table {
+        background: #FFFFFF;
+        border: 0.5px solid #111111;
+        border-radius: 4px;
+    }
+    
+    .users-list .mobile-users-list .list-section .ui.fixed.selectable.unstackable.table thead tr>th {
+        background: #EBEBEB;
+        border-bottom: 0.5px solid #111111;
+        font-family: Noto-Medium;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 6px;
+        letter-spacing: 0.1em;
+        color: #373737;
+        padding: 10.25px 14px;
+    }
+    
+    .users-list .mobile-users-list .list-section .ui.fixed.selectable.unstackable.table tr {
+        cursor: pointer;
+    }
+    
+    .users-list .mobile-users-list .list-section .ui.fixed.selectable.unstackable.table tr td {
+        font-weight: 400;
+        font-family: Noto-Regular;
+        font-size: 10px;
+        line-height: 16px;
+        text-decoration-line: underline;
+        color: #2665C3;
+        border-bottom: 0.5px solid #949494;
+        padding: 10px 14px;
+    }
+
+    .delete-account-modal.ui.modal .content {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+
+    .delete-account-modal.ui.modal .header-text {
+        font-size: 14px;
+    }
+
+    .delete-account-modal.ui.modal .header-section {
+        margin-bottom: 40px;
+    }
+
+    .delete-account-modal.ui.modal .action-section .ui.button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .page-container {
+        padding: 0;
+    }
+
+    .main-accordion.ui.accordion {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        border-top: 0.5px solid #949494;
+    }
+
+    .main-accordion.ui.accordion .title:not(.ui) {
+        border-bottom: 0.5px solid #949494;
+        padding: 28px 16px;
+        background: #F4F4F4;
+        font-family: Noto-Medium;
+        font-size: 16px;
+        line-height: 87%;
+        color: #231815;
+    }
+
+    .main-accordion.ui.accordion .title img {
+        float: right;
+    }
+
+    .main-accordion.ui.accordion .title.active {
+        background: #FFD2D2 !important;
+        font-family: Noto-Bold;
+        border-bottom: none;
+    }
+
+    .main-accordion.ui.accordion .title.active img {
+        content: url('/public/images/main-images/minus.svg');
+        padding-top: 6px;
+    }
+
+    .custom-services .custom-services-detail {
+        margin-top: 0px;
+    }
+
+    .main-accordion.ui.accordion .content.active {
+        padding: 38px 16px !important;
+    }
+
+    .custom-services .custom-services-detail h2 {
+        text-align: center;
+        font-size: 18px;
+        font-family: Noto-Bold;
+    }
+
+    .custom-services .custom-services-detail .add-service-form {
+        margin-top: 21px;
+        display: block;
+    }
+
+    .custom-services .custom-services-detail .add-service-form .field>.ui.label,
+    .add-service-modal.ui.modal .ui.form .field>.ui.label {
+        font-size: 14px;
+    }
+
+    .custom-services .custom-services-detail .add-service-form .fields {
+        display: block;
+        width: 100%;
+    }
+
+    .custom-services .custom-services-detail .add-service-form .fields .field {
+        width: 100% !important;
+    }
+
+    .custom-services .custom-services-detail .add-service-form .fields .field .ui.input {
+        font-size: 14px;
+    }
+
+    .custom-services .custom-services-detail .add-service-form .fields .field .ui.input input {
+        padding: 13px 16px;
+    }
+
+    .custom-services .custom-services-detail .add-service-form .fields .field:first-child {
+        width: 100% !important;
+        margin-bottom: 16px;
+    }
+
+    .custom-services .custom-services-detail .add-service-form .fields .field:last-child .price-section {
+        display: flex;
+        align-items: center;
+    }
+
+    .custom-services .custom-services-detail .add-service-form .fields .field:last-child .price-section .ui.input {
+        width: 57%;
+    }
+
+    .custom-services-detail .add-service-form .select-section {
+        width: 43%;
+    }
+
+    .custom-services-detail .add-service-form .select-section .wrapper p {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .custom-services-detail .add-service-form .select-section .wrapper p {
+        text-align: right;
+    }
+
+    .custom-services-detail .add-service-form .action-section {
+        text-align: center;
+    }
+
+    .custom-services-detail .add-service-form .action-section .ui.button {
+        margin-top: 15px;
+        padding: 11px 19px;
+        width: 70%;
+        font-size: 14px;
+        margin-left: 0;
+    }
+
+    .custom-services-detail .add-service-form .action-section .ui.button p span {
+        float: left;
+    }
+
+    .custom-services .services-list {
+        margin-top: 44px;
+    }
+
+    .custom-services .services-list .ui.grid .row .column {
+        width: 100% !important;
+        margin-left: 14px;
+        margin-right: 14px;
+        margin-bottom: 15px;
+        height: 76px;
+        padding-right: 10px;
+    }
+
+    .custom-services .services-list .ui.grid .row .column .right-section p:first-child {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .custom-services .services-list .ui.grid .row .column .right-section p:nth-child(2) {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+
+    .custom-services .services-list .ui.grid .row .column .left-section {
+        margin-right: 16px;
+    }
+
+    .custom-services .services-list .ui.grid .row .column .right-section {
+        margin: auto;
+    }
+
+    .custom-services .services-list .ui.grid .row .column .right-section .action-section {
+        top: auto;
+        bottom: 0;
+    }
+
+    .custom-services .services-list .ui.grid .row .column .right-section .action-section img {
+        margin-left: 16px;
+    }
+
+    .custom-services .services-list .ui.grid .row .column .left-section {
+        width: 43%;
+    }
+
+    .add-service-modal.ui.modal,
+    .delete-service-modal.ui.modal,
+    .user-download-modal.ui.modal {
+        width: 91.59%;
+        top: 41px;
+    }
+
+    .user-download-modal.ui.modal .content {
+        padding: 10px !important;
+    }
+
+    .user-download-modal.ui.modal .content .user-details {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .user-download-modal.ui.modal .content .user-details .user-info {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    .user-download-modal.ui.modal .content .action-section {
+        margin-bottom: 37px;
+    }
+
+    .user-download-modal.ui.modal .content .action-section .ui.button {
+        font-size: 14px;
+    }
+
+    .user-download-modal.ui.modal .content .user-details .user-info .item p:first-child {
+        padding: 20px 10px 14px 8px;
+    }
+
+    .user-download-modal.ui.modal .content .user-details .user-info .item p:last-child {
+        font-size: 12px;
+    }
+
+    .add-service-modal.ui.modal .content {
+        padding: 50px 20px !important;
+    }
+
+
+    .add-service-modal.ui.modal .content .header-text {
+        font-size: 18px;
+    }
+
+    .add-service-modal.ui.modal .ui.form .field {
+        margin-bottom: 16px;
+    }
+
+    .add-service-modal.ui.modal .ui.form .field .ui.input {
+        font-size: 14px;
+    }
+
+    .add-service-modal.ui.modal .ui.form .field:first-child .ui.input {
+        width: 100%;
+    }
+
+    .add-service-modal.ui.modal .ui.form .field .ui.input input {
+        padding: 13px 15px;
+    }
+
+    .add-service-modal.ui.modal .service-image {
+        margin-top: 19px;
+    }
+
+    .add-service-modal.ui.modal .service-image img {
+        width: 57%;
+    }
+
+    .add-service-modal.ui.modal .actions-section .ui.button {
+        width: 100%;
+        margin-bottom: 24px;
+        font-size: 14px;
+    }
+
+    .add-service-modal.ui.modal .actions-section p {
+        font-size: 14px;
+    }
+
+    .delete-service-modal.ui.modal .content {
+        padding: 40px 20px !important;
+    }
+
+    .delete-service-modal.ui.modal .content .header-text {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    .delete-service-modal.ui.modal .content .actions-section {
+        display: block;
+    }
+
+    .delete-service-modal.ui.modal .content .actions-section .ui.button {
+        width: 100% !important;
+        font-size: 14px !important;
+        height: auto !important;
+        padding: 11px 16px;
+        margin-bottom: 10px !important;
+    }
+
+    .wish-list .my-services .lists {
+        margin-top: 39px;
+    }
+
+    .wish-list .my-services h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .main-accordion.ui.accordion .content.active.update-account {
+        padding: 0 !important;
+    }
+
+    .update-account .right-side {
+        width: 100%;
+    }
+
+    .update-account .right-side .update-account-accordion.ui.accordion {
+        margin-top: 0;
+    }
+
+    .update-account .right-side .update-account-accordion.ui.accordion .title {
+        background: white;
+        padding-left: 35px;
+    }
+
+    .update-account .right-side .update-account-accordion.ui.accordion .title.active {
+        border-bottom: 0.5px solid #949494;
+        background: white !important;
+    }
+
+    .update-account .right-side .update-account-accordion.ui.accordion .content.active {
+        padding: 0 !important;
+    }
+
+    .update-account .right-side .first-form,
+    .update-account .right-side .second-form,
+    .update-account .right-side .third-form {
+        margin-bottom: 0px;
+    }
+
+    .update-account .right-side .first-form,
+    .update-account .right-side .third-form {
+        padding: 40px 36px;
+    }
+
+    .update-account .right-side .second-form,
+    .update-account .right-side .third-form.delete {
+        padding: 40px 16px;
+    }
+
+    .update-account .right-side h2 {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .update-account .right-side .ui.form .fields-section .ui.label {
+        font-size: 14px;
+        padding-bottom: 8px;
+    }
+
+    .update-account .right-side .ui.form .field .ui.input,
+    .update-account .right-side .ui.form .fields .field .ui.input,
+    .update-account .right-side .ui.form .wide.field .ui.input {
+        font-size: 14px;
+    }
+
+    .update-account .right-side .ui.form .field .ui.input input,
+    .update-account .right-side .ui.form .fields .field .ui.input input,
+    .update-account .right-side .ui.form .wide.field .ui.input input {
+        padding: 12.5px 14px;
+    }
+
+    .update-account .right-side .ui.form .fields .field {
+        margin-bottom: 10px !important;
+    }
+
+    .update-account .right-side .ui.form .dob-fields {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .update-account .right-side .ui.form:not(.unstackable) [class*="equal width"].fields.dob-fields:not(.unstackable)>.field {
+        width: 30% !important;
+        padding-right: 3px;
+        padding-left: 3px;
+    }
+
+    .update-account .right-side .ui.form:not(.unstackable) [class*="equal width"].fields.dob-fields:not(.unstackable)>.field:first-child {
+        padding-left: 0;
+    }
+
+    .update-account .right-side .ui.form:not(.unstackable) [class*="equal width"].fields.dob-fields:not(.unstackable)>.field:last-child {
+        padding-right: 0;
+    }
+
+    .update-account .right-side .ui.form .ui.radio.checkbox {
+        width: auto;
+    }
+
+    .update-account .right-side .ui.form .ui.radio.checkbox label {
+        font-size: 14px;
+        padding-right: 20px;
+    }
+
+    .update-account .right-side .ui.form .ui.radio.checkbox label:before {
+        width: 15px;
+        height: 15px;
+    }
+
+    .update-account .right-side .ui.form .ui.radio.checkbox label:after {
+        width: 25px;
+        height: 25px;
+    }
+
+    .update-account .right-side .ui.form .field {
+        width: 100%;
+    }
+
+    .update-account .right-side .ui.form .field.address-field .ui.input.post-code-input {
+        width: 64.5%;
+    }
+
+    .update-account .right-side .ui.form .action-section .ui.button {
+        margin-top: 29px;
+        width: 100%;
+    }
+
+    .update-account .right-side .second-form .ui.vertical.accordion.ui.menu .content {
+        padding: 22px 11px !important;
+    }
+
+    .update-account .right-side .second-form .ui.vertical.accordion.ui.menu .content .item-list {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
+    .update-account .right-side .second-form .ui.vertical.accordion.ui.menu .content .item-list span {
+        line-height: 100%;
+    }
+
+    .update-account .right-side .second-form .ui.vertical.accordion.ui.menu .content .item-list .left-text span:last-child {
+        margin-right: 0;
+    }
+
+    .update-account .right-side .third-form .register-options img {
+        width: 100%;
+        margin-bottom: 1px;
+        height: 44px;
+    }
+
+    .update-account .right-side .third-form p {
+        margin-bottom: 9px;
+    }
+
+    .update-account .right-side .third-form .action-section .ui.button {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .delete-account-modal.ui.modal {
+        width: 91.59%;
+        top: 41px;
+    }
+
+    .main-accordion.provider.ui.accordion .content.active {
+        padding: 40px 0 !important;
+    }
+
+    .my-page .page-details .page-numbers {
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    .my-page .page-details .page-numbers .first-text .date-mobile {
+        margin-top: 40px;
+    }
+
+    .my-page .page-details .page-numbers .first-text {
+        font-size: 18px;
+    }
+
+    .my-page .page-details .page-numbers .first-text .date-mobile span:first-child {
+        margin-left: 0;
+    }
+
+    .my-page .page-details .page-numbers .numbers-section {
+        margin-top: 26px;
+        display: block;
+    }
+
+    .my-page .page-details .page-numbers .numbers-section p {
+        margin: 0;
+    }
+
+    .my-page .page-details .page-numbers .numbers-section .text-mobile {
+        display: flex;
+        background: #FFFFFF;
+        border: 0.5px solid #949494;
+        margin-bottom: 0;
+    }
+
+    .my-page .page-details .page-numbers .numbers-section .text-mobile:first-child {
+        border-bottom: none;
+    }
+
+    .my-page .page-details .page-numbers .numbers-section .text-mobile p {
+        text-align: left;
+        padding: 28px 16px;
+    }
+
+    .my-page .page-details .page-numbers .numbers-section .text-mobile p:first-child {
+        width: 45%;
+        font-size: 18px;
+    }
+
+    .my-page .page-details .page-numbers .numbers-section .text-mobile p:last-child {
+        width: 55%;
+        font-size: 24px;
+        color: #FA7575;
+        border-left: 0.5px solid #949494;
+    }
+
+    .my-page .page-details .page-numbers .numbers-section .text-mobile:last-child p:last-child {
+        font-size: 32px;
+    }
+
+    .my-page .page-details .add-service-section {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .my-page .page-details .add-service-section .ui.button {
+        padding: 11.3px 18px;
+        height: 44px;
+        width: 75%;
+    }
+
+    .my-page .page-details .add-service-section .ui.button p span {
+        float: left;
+    }
+
+    .my-page .page-details .my-services {
+        margin-bottom: 46px;
+    }
+
+    .my-page .page-details .my-services h2 {
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .my-page .add-service {
+        margin-top: -40px;
+        width: 100%;
+        padding: 29px 16px 40px;
+    }
+
+    .my-page .add-service .select-images.default {
+        padding: 40px 20px;
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+
+    .my-page .add-service .select-images img {
+        margin-bottom: 12px;
+    }
+
+    .my-page .add-service .select-images .select-section .wrapper p {
+        font-size: 18px;
+    }
+
+    .my-page .add-service .select-images .second-header {
+        font-size: 12px;
+    }
+
+    .my-page .add-service .ui.form {
+        margin-top: 40px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .my-page .add-service .ui.form .field>.ui.label {
+        font-size: 14px;
+    }
+
+    .my-page .add-service .ui.form .field .ui.selection.dropdown,
+    .my-page .add-service .ui.form .field .ui.input,
+    .my-page .add-service .ui.form .field .ui.selection.dropdown .menu>.item,
+    .my-page .add-service .ui.form .field textarea {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .my-page .add-service .ui.form .ui.radio.checkbox {
+        width: auto;
+    }
+
+    .my-page .add-service .ui.form .ui.radio.checkbox label {
+        font-size: 14px;
+        padding-right: 20px;
+    }
+
+    .my-page .add-service .ui.form .ui.radio.checkbox label:before {
+        width: 15px;
+        height: 15px;
+    }
+
+    .my-page .add-service .ui.form .ui.radio.checkbox label:after {
+        width: 25px;
+        height: 25px;
+    }
+
+    .my-page .add-service .ui.form .field .ui.selection.dropdown {
+        padding: 14.5px 20px 14.5px 14px;
+    }
+
+    .my-page .add-service .ui.form .field .ui.input input {
+        padding: 13px 20px 13px 14px;
+    }
+
+    .my-page .add-service .ui.form .field textarea {
+        height: 160px;
+    }
+
+    .my-page .add-service .ui.form .default-images-section .one-image {
+        width: 45%;
+        margin-right: 13px;
+    }
+
+    .my-page .add-service .ui.form .default-images-section .one-image:nth-child(3) {
+        margin-right: 13px;
+    }
+
+    .my-page .add-service .ui.form .custom-fields-section .one-custom,
+    .my-page .add-service .ui.form .custom-fields-section {
+        margin-bottom: 10px;
+    }
+
+    .my-page .add-service .ui.form .custom-fields-section .one-custom .ui.input {
+        width: 86.7%;
+        margin-top: 15px;
+    }
+
+    .my-page .add-service .ui.form .custom-fields-section .one-custom {
+        padding: 20px 10px 20px 10px;
+    }
+
+    .my-page .add-service .ui.form .custom-fields-section .one-custom .value-section img {
+        margin-right: 26px;
+        margin-top: 26px;
+        width: 14px;
+    }
+
+    .my-page .add-service .ui.form .custom-fields-section .one-custom .value-section {
+        margin-top: 10px;
+    }
+
+    .my-page .add-service .ui.form .action-section {
+        margin-top: 40px;
+    }
+
+    .my-page .add-service .ui.form .action-section .ui.button {
+        font-size: 14px;
+        width: 75%;
+        padding: 15px;
+    }
+
+    .my-page .add-service .ui.form .default-images-section .one-image img:first-child {
+        right: -7px;
+        top: -7px;
+        width: 20px;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .custom-services-detail .add-service-form .action-section .ui.button {
+        width: 100%;
+    }
+
+    .my-page .page-details .add-service-section .ui.button {
+        width: 81%;
+    }
+
+}

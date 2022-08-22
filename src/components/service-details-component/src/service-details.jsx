@@ -1,9 +1,11 @@
 import React from 'react';
 import ServiceApi from "../api/service-api"
-import {Breadcrumb, Header, Loader, Button} from 'semantic-ui-react'
+import { Breadcrumb, Header, Loader, Button } from 'semantic-ui-react'
 import Helper from "../../../utils/helper"
 import "../style/service-css.css"
 import Card from "../../card-component/card"
+import ContractModal from './contract-modal';
+import UnsubscripeModal from './unsubscripe-modal';
 
 export default class ServiceDetails extends React.Component {
 
@@ -11,17 +13,20 @@ export default class ServiceDetails extends React.Component {
         super(props);
         this.serviceApi = new ServiceApi(this);
         this.serviceId = this.props ? this.props.match.params.id : '';
+        this.contractModalRef = React.createRef();
+        this.unsubscripeModalRef = React.createRef();
         this.state = {
             loading: true,
             service: {},
-            related_services: []
+            related_services: [],
+            loader: false
             // service: props? props.service? props.service.service: {}: {}
         }
     }
 
     async componentDidMount() {
-        const response = await this.serviceApi.getServiceDetails({id: this.serviceId});
-        this.setState({loading: false});
+        const response = await this.serviceApi.getServiceDetails({ id: this.serviceId });
+        this.setState({ loading: false });
         if (response.data) {
             let relatedServices = response.data.related_services ? response.data.related_services : [];
             let service = response.data.service ? response.data.service : {};
@@ -38,33 +43,64 @@ export default class ServiceDetails extends React.Component {
         window.location = window.location.origin
     };
 
+
+    openContractModal = () => {
+        this.contractModalRef.current.show(this.state.service);
+    }
+
+    openUnsubsripeModal = () => {
+        this.unsubscripeModalRef.current.show(this.state.service);
+    }
+
+    addToWishtList = async () => {
+        let { service } = this.state;
+        const response = service.added_to_wishlist ? await this.serviceApi.deleteFromWishList({ id: this.serviceId }) :
+            await this.serviceApi.addToWishList({ service_id: this.serviceId })
+        if (response.data) {
+            service.added_to_wishlist = !service.added_to_wishlist
+        }
+        this.setState({
+            service: service
+        })
+    }
+
     render() {
-        let {loading, related_services, service} = this.state;
+        let { loading, related_services, service, loader } = this.state;
+        let user = localStorage.getItem('api_token')
         return (
             <div className={'service-details-page'}>
                 {
                     loading ?
-                        <Loader active={loading}/>
+                        <Loader active={loading} />
                         :
                         !Helper.isEmpty(service) ?
                             <>
                                 <Breadcrumb>
                                     <Breadcrumb.Section link onClick={() => this.clicked()}>Top</Breadcrumb.Section>
-                                    <Breadcrumb.Divider icon='right chevron'/>
+                                    <Breadcrumb.Divider icon='right chevron' />
                                     <Breadcrumb.Section
                                         active>{service.categories[0].name}</Breadcrumb.Section>
-                                    <Breadcrumb.Divider icon='right chevron'/>
+                                    <Breadcrumb.Divider icon='right chevron' />
                                     <Breadcrumb.Section active>{service.name}</Breadcrumb.Section>
                                 </Breadcrumb>
                                 <div className={'service-details'}>
                                     <div className={'image-section'}>
                                         <img className={'first-img'}
-                                             src={`https://backend-nichijo.s-pm.co.jp/storage/${service.image}`}/>
+                                            src={`https://bonzuttner.xsrv.jp/spm-back/storage/${service.image}`} />
                                         <Button className={'category-btn'}>{service.categories[0].name}</Button>
-                                        <div className={'like-section'}>
-                                            <img src={'/images/main-images/like.svg'}/>
-                                            <Button>登録する</Button>
-                                        </div>
+                                        {
+                                            localStorage.getItem('user_type') ?
+                                                localStorage.getItem('user_type') === 'user' && service.type === 'general'?
+                                                    <div className={'like-section'}>
+                                                        <img
+                                                            onClick={() => this.addToWishtList()}
+                                                            src={service.added_to_wishlist ? '/images/main-images/liked.svg' : '/images/main-images/like.svg'} />
+                                                        <Button>登録する</Button>
+                                                    </div>
+                                                    : null
+                                                : null
+                                        }
+
                                     </div>
                                     <div className={'details-section'}>
                                         <div className={'name'}>
@@ -82,7 +118,7 @@ export default class ServiceDetails extends React.Component {
                                                     service.three_points ?
                                                         service.three_points.map((point) => {
                                                             return <div className={'single-point'}>
-                                                                <img src={'/images/main-images/check.svg'}/>
+                                                                <img src={'/images/main-images/check.svg'} />
                                                                 <p>{point}</p>
                                                             </div>
                                                         })
@@ -92,13 +128,13 @@ export default class ServiceDetails extends React.Component {
                                         </div>
                                         <div className={'images'}>
                                             <img className={'first-img'}
-                                                 src={`https://backend-nichijo.s-pm.co.jp/storage/${service.image}`}/>
+                                                src={`https://bonzuttner.xsrv.jp/spm-back/storage/${service.image}`} />
                                             <div className={'small-images'}>
                                                 {
                                                     service.images ?
                                                         service.images.map((img) => {
                                                             return <img
-                                                                src={`https://backend-nichijo.s-pm.co.jp/storage/${img}`}/>
+                                                                src={`https://bonzuttner.xsrv.jp/spm-back/storage/${img}`} />
                                                         })
                                                         : null
                                                 }
@@ -108,7 +144,7 @@ export default class ServiceDetails extends React.Component {
                                             <p>{service.introduction}</p>
                                             <a target={'_blank'} href={service.url}>
                                                 {`${service.name} のサイトへ`}
-                                                <img src={'/images/main-images/url.svg'}/>
+                                                <img src={'/images/main-images/url.svg'} />
                                             </a>
                                         </div>
                                         <div className={'custom-list'}>
@@ -122,7 +158,15 @@ export default class ServiceDetails extends React.Component {
                                                     })
                                                     : null
                                             }
-                                            <Button>このサービスへ登録する</Button>
+                                            {
+                                                user && !service.is_subscribed && service.type === 'general'?
+                                                    <Button loading={loader}
+                                                        onClick={() => this.openContractModal()}
+                                                    //onClick={() => this.openUnsubsripeModal()}
+                                                    >このサービスへ登録する</Button>
+                                                    : null
+                                            }
+
                                         </div>
                                         <div className={'border'}></div>
                                         <div className={'related-services'}>
@@ -131,7 +175,7 @@ export default class ServiceDetails extends React.Component {
                                                 {
                                                     related_services ?
                                                         related_services.map((relatedService) => {
-                                                            return <Card service={relatedService} props={this.props}/>
+                                                            return <Card service={relatedService} props={this.props} />
                                                         })
                                                         : null
                                                 }
@@ -140,6 +184,8 @@ export default class ServiceDetails extends React.Component {
                                     </div>
 
                                 </div>
+                                <ContractModal ref={this.contractModalRef} props={this} />
+                                <UnsubscripeModal ref={this.unsubscripeModalRef} props={this} />
                             </>
                             : null
                 }

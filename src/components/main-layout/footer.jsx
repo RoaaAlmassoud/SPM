@@ -1,12 +1,14 @@
 import React from 'react';
-import {Menu} from "semantic-ui-react"
+import { Menu } from "semantic-ui-react"
 
 export default class Footer extends React.Component {
 
     constructor(props) {
         super(props);
+        let pathName = props.props.location.pathname
         this.state = {
-            innerWidth: window.innerWidth
+            innerWidth: window.innerWidth,
+            showMediaImage: pathName === '/'
         }
     }
 
@@ -17,27 +19,30 @@ export default class Footer extends React.Component {
     }
 
     componentWillMount() {
-        window.onresize = this.changeInnerWidth;
+        window.addEventListener('resize', this.changeInnerWidth);
     }
 
-    handleItemClick = (e, {name}) => {
+    handleItemClick = (e, { name }) => {
         this.setState({
             activeItem: name,
-            menuOpen: false
         }, () => {
-            this.props.history.push(`/${name === 'home' ? '' : name ===
-            'support' || name === 'trips' || name === 'requests' ? name + '/1' : name}`)
+            this.props.props.history.push(`/${name}`)
         })
     };
 
     render() {
-        let {innerWidth} = this.state
+        let { innerWidth, showMediaImage } = this.state
         return (
             <div className={`${innerWidth <= 768 ? 'mobile' : ''} footer-section`} id={'footer-section'}>
-                <img src={"/images/main-images/media.svg"}
-                     alt={'img'}
-                     className={'footer-image'}
-                />
+                {
+                    showMediaImage ?
+                        <img src={"/images/main-images/media.svg"}
+                            alt={'img'}
+                            className={'footer-image'}
+                        />
+                        : null
+                }
+
                 <div className={'footer'}>
                     {
                         innerWidth <= 768 ?
@@ -45,30 +50,31 @@ export default class Footer extends React.Component {
                                 <Menu>
                                     <Menu.Item
                                         className={'underline'}
-                                        name='運営会社'
+                                        name='operating-company'
                                         // active={activeItem === 'support'}
                                         onClick={this.handleItemClick}
-                                    />
+                                    >運営会社
+                                    </Menu.Item>
                                     <Menu.Item
                                         // className={'underline'}
-                                        name='プライバシーポリシー'
+                                        name='privacy-policy'
                                         //active={activeItem === 'disclaimer'}
                                         onClick={this.handleItemClick}
-                                    />
+                                    >プライバシーポリシー</Menu.Item>
                                 </Menu>
                                 <Menu>
                                     <Menu.Item
                                         //className={'underline'}
-                                        name='利用規約'
+                                        name='terms'
                                         //active={activeItem === 'Advises'}
                                         onClick={this.handleItemClick}
-                                    />
+                                    >利用規約</Menu.Item>
                                     <Menu.Item
                                         //className={'underline'}
-                                        name='お問い合わせ'
+                                        name='inquiry'
                                         //active={activeItem === 'Advises'}
                                         onClick={this.handleItemClick}
-                                    />
+                                    >お問い合わせ</Menu.Item>
                                 </Menu>
                                 <Menu>
                                     <Menu.Item
@@ -78,7 +84,7 @@ export default class Footer extends React.Component {
                                         onClick={this.handleItemClick}
                                     >
                                         <span>nichijo media</span>
-                                        <img src={'/images/main-images/media-box.svg'}/>
+                                        <img src={'/images/main-images/media-box.svg'} />
 
                                     </Menu.Item>
                                 </Menu>
@@ -95,25 +101,25 @@ export default class Footer extends React.Component {
                             <Menu>
                                 <Menu.Item
                                     className={'underline'}
-                                    name='運営会社'
+                                    name='operating-company'
                                     // active={activeItem === 'support'}
                                     onClick={this.handleItemClick}
-                                />
+                                >運営会社</Menu.Item>
                                 <Menu.Item
                                     // className={'underline'}
-                                    name='プライバシーポリシー'
+                                    name='privacy-policy'
                                     //active={activeItem === 'disclaimer'}
                                     onClick={this.handleItemClick}
-                                />
+                                >プライバシーポリシー</Menu.Item>
                                 <Menu.Item
                                     //className={'underline'}
-                                    name='利用規約'
+                                    name='terms'
                                     //active={activeItem === 'Advises'}
                                     onClick={this.handleItemClick}
-                                />
+                                >利用規約</Menu.Item>
                                 <Menu.Item
                                     //className={'underline'}
-                                    name='お問い合わせ'
+                                    name='inquiry'
                                     //active={activeItem === 'Advises'}
                                     onClick={this.handleItemClick}
                                 />
@@ -124,7 +130,7 @@ export default class Footer extends React.Component {
                                     onClick={this.handleItemClick}
                                 >
                                     <span>nichijo media</span>
-                                    <img src={'/images/main-images/media-box.svg'}/>
+                                    <img src={'/images/main-images/media-box.svg'} />
 
                                 </Menu.Item>
                                 <Menu.Menu position='right'>

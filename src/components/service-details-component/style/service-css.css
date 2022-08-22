@@ -1,28 +1,90 @@
-.service-details-page{
+.service-details-page {
+    padding: 50px 0 20px 0px;
+}
+
+.service-details-page .ui.breadcrumb {
+    padding-left: 80px;
+}
+
+.operation-completed-page .ui.breadcrumb {
     padding: 50px 0 20px 80px;
 }
 
-.service-details{
+.operation-completed-page .text-section {
+    background: #FAFAFA;
+    text-align: center;
+    padding: 100px 50px;
+}
+
+.operation-completed-page .text-section h1 {
+    font-size: 30px;
+    font-family: Noto-Medium;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.operation-completed-page .border-section {
+    width: 52.9%;
+    margin: auto;
+    padding: 50px 10px;
+    background: #F6F6F6;
+    border: 1px solid #000000;
+    margin-bottom: 50px;
+}
+
+.operation-completed-page .border-section h2 {
+    font-size: 25px;
+    font-family: Noto-Bold;
+    margin-bottom: 8px;
+}
+
+.operation-completed-page .border-section p {
+    font-size: 15px;
+    font-family: Noto-Bold;
+    text-decoration: underline;
+    color: #606060;
+    cursor: pointer;
+}
+
+.operation-completed-page .ui.button {
+    width: 14.93%;
+    padding: 18px 55px;
+    background: #FA7575;
+    border-radius: 4px;
+    font-family: Noto-Bold;
+    font-size: 15px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.operation-completed-page .ui.button:hover {
+    color: #FFFFFF;
+    background: #FA7575;
+}
+
+.service-details {
     background: #FAFAFA;
     text-align: center;
     margin-top: 20px;
 }
 
-.service-details .first-img{
-   padding-top: 100px;
+.service-details .first-img {
+    padding-top: 100px;
     width: 100%;
 }
 
-.service-details .image-section{
+.service-details .image-section {
     width: 70%;
     margin: auto;
+    display: inline-block;
 }
 
-.service-details .image-section .category-btn{
+.service-details .image-section .category-btn {
     float: left;
     margin-top: 32px;
     font-style: normal;
-    font-weight: 700;
+    font-family: Noto-Bold;
+    /* font-weight: 700; */
     font-size: 12px;
     line-height: 12px;
     letter-spacing: 0.1em;
@@ -31,21 +93,22 @@
     padding: 11px 20px;
 }
 
-.service-details .image-section .like-section{
+.service-details .image-section .like-section {
     text-align: right;
     margin-top: 25px;
 }
 
-.service-details .image-section .like-section img{
+.service-details .image-section .like-section img {
     vertical-align: middle;
+    cursor: pointer;
     margin-left: 20px;
     margin-right: 20px;
 }
 
-.service-details .image-section .like-section .ui.button{
-    font-family: 'Noto Sans JP';
+.service-details .image-section .like-section .ui.button {
+    font-family: Noto-Bold;
     font-style: normal;
-    font-weight: 700;
+    /* font-weight: 700; */
     font-size: 15px;
     line-height: 22px;
     color: #FFFFFF;
@@ -53,24 +116,31 @@
     padding: 13px 40px;
 }
 
-.service-details .details-section{
+.service-details .details-section {
     width: 70%;
     margin: 50px auto;
     text-align: left;
 }
 
-.service-details .details-section .name h1{
-    font-size: 30px;
+.service-details .details-section p {
+    font-size: 15px;
+    font-family: Noto-Medium;
 }
 
-.service-details .details-section .price{
+.service-details .details-section .name h1 {
+    font-size: 30px;
+    font-family: Noto-Medium;
+}
+
+.service-details .details-section .price {
     margin-top: 50px;
 }
 
-.service-details .details-section .price .ui.button{
+.service-details .details-section .price .ui.button {
     font-style: normal;
     padding: 18px 80px;
-    font-weight: 500;
+    font-family: Noto-Medium;
+    /* font-weight: 500; */
     font-size: 20px;
     line-height: 100%;
     text-align: center;
@@ -81,23 +151,24 @@
     margin-right: 24px;
 }
 
-.service-details .details-section .points-section{
+.service-details .details-section .points-section {
     margin-top: 50px;
 }
 
-.service-details .details-section .points-section h3{
+.service-details .details-section .points-section h3 {
     font-size: 20px;
     font-style: normal;
-    font-weight: 700;
+    font-family: Noto-Bold;
+    /* font-weight: 700; */
     line-height: 100%;
     color: #FA7575;
 }
 
-.service-details .details-section .points-section .points-list{
+.service-details .details-section .points-section .points-list {
     margin-top: 20px;
 }
 
-.service-details .details-section .points-section .points-list .single-point{
+.service-details .details-section .points-section .points-list .single-point {
     padding: 15px 18px;
     width: 50%;
     display: flex;
@@ -106,60 +177,62 @@
     margin-bottom: 10px;
 }
 
-.service-details .details-section .points-section .points-list .single-point p{
+.service-details .details-section .points-section .points-list .single-point p {
     font-size: 15px;
 }
 
-.service-details .details-section .points-section .points-list .single-point img{
+.service-details .details-section .points-section .points-list .single-point img {
     padding-right: 18px;
 }
 
-.service-details .details-section .images .small-images{
+.service-details .details-section .images .small-images {
     display: flex;
     margin-top: 20px;
 }
 
-.service-details .details-section .images .small-images img{
+.service-details .details-section .images .small-images img {
     width: 26%;
     margin-right: 20px;
 }
 
-.service-details .details-section .images .small-images img:last-child{
+.service-details .details-section .images .small-images img:last-child {
     width: 15%;
 }
 
-.service-details .details-section .introduction-section{
+.service-details .details-section .introduction-section {
     margin-top: 50px;
 }
 
-.service-details .details-section .introduction-section p{
+.service-details .details-section .introduction-section p {
     font-size: 15px;
 }
 
-.service-details .details-section .introduction-section a{
+.service-details .details-section .introduction-section a {
     font-style: normal;
     font-weight: 500;
+    font-family: Noto-Medium;
     font-size: 15px;
     line-height: 160%;
     text-decoration-line: underline;
     color: #FA7575;
 }
 
-.service-details .details-section .introduction-section a img{
+.service-details .details-section .introduction-section a img {
     padding-left: 10px;
     margin-bottom: -4px;
 }
 
-.service-details .details-section .custom-list{
+.service-details .details-section .custom-list {
     margin-top: 50px;
     text-align: center;
 }
 
-.service-details .details-section .custom-list .ui.button{
+.service-details .details-section .custom-list .ui.button {
     padding: 18px 80px;
     background: #FA7575;
     border-radius: 4px;
-    font-weight: 700;
+    font-family: Noto-Bold;
+    /* font-weight: 700; */
     font-size: 15px;
     line-height: 100%;
     color: #FFFFFF;
@@ -167,7 +240,7 @@
 
 }
 
-.service-details .details-section .custom-list .single-custom-item{
+.service-details .details-section .custom-list .single-custom-item {
     width: 100%;
     display: flex;
     border-top: none;
@@ -175,47 +248,551 @@
     text-align: left;
 }
 
-.service-details .details-section .custom-list .single-custom-item:first-child{
+.service-details .details-section .custom-list .single-custom-item:first-child {
     border-top: 1px solid #C2C2C2;
 }
 
-.service-details .details-section .custom-list .single-custom-item h3{
+.service-details .details-section .custom-list .single-custom-item h3 {
     width: 30%;
     padding: 18px;
     margin-bottom: 0;
     background: #F6F6F6;
     font-style: normal;
-    font-weight: 700;
+    font-family: Noto-Bold;
+    /* font-weight: 700; */
     font-size: 15px;
     line-height: 100%;
     color: #231815;
 }
 
-.service-details .details-section .custom-list .single-custom-item p{
+.service-details .details-section .custom-list .single-custom-item p {
     width: 70%;
     padding: 18px;
     font-style: normal;
+    font-family: Noto-Regular;
     font-weight: 400;
     font-size: 15px;
     line-height: 100%;
     color: #231815;
 }
 
-.service-details .details-section .border{
+.service-details .details-section .border {
     border: 5px solid #FFFFFF;
     margin-top: 100px;
     margin-bottom: 100px;
 }
 
-.service-details .details-section .related-services{
+.service-details .details-section .related-services {
     margin-top: 50px;
 }
 
-.service-details .details-section .related-services .lists{
+.service-details .details-section .related-services .lists .card {
+    margin-bottom: 50px;
+}
+
+.service-details .details-section .related-services h2 {
+    font-size: 25px;
+    margin-top: 0px;
+}
+
+.subscribe-modal.ui.modal {
+    border-radius: 20px;
+    width: 55.556%;
+    top: 85px;
+    height: fit-content
+}
+
+.subscribe-modal.ui.modal>:last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.subscribe-modal.ui.modal>.icon:first-child+*,
+.subscribe-modal.ui.modal>:first-child:not(.icon) {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.subscribe-modal.ui.modal .content {
+    padding: 100px 12.5% 78px;
+}
+
+.subscribe-modal.ui.modal .content .header-section {
+    text-align: center;
+}
+
+.subscribe-modal.ui.modal .content .header-section .header-text {
+    font-style: normal;
+    font-family: Noto-Medium;
+    font-weight: 500;
+    font-size: 20px !important;
+    line-height: 100%;
+    color: #000000;
+    padding-bottom: 8px;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto 47px;
+    border-bottom: 5px solid #F6F6F6;
+}
+
+.subscribe-modal.ui.modal .content .header-section p:nth-child(2) {
+    font-style: normal;
+    font-family: Noto-Medium;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+    color: #6F6F6F;
+    margin-bottom: 16px;
+}
+
+.subscribe-modal.ui.modal .content .header-section p:last-child {
+    font-style: normal;
+    font-family: Noto-Medium;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 100%;
+    color: #000000;
+}
+
+.subscribe-modal.ui.modal .content .ui.vertical.accordion.ui.menu {
+    width: 71.5%;
+    background: #FFFFFF;
+    border: 0.5px solid #373737;
+    border-radius: 20px;
+    margin: 40px auto 50px;
+}
+
+.subscribe-modal.ui.modal .content .ui.vertical.accordion.ui.menu .item {
+    background: #EBEBEB;
+    padding: 0;
+    border-radius: 20px;
+}
+
+.subscribe-modal.ui.modal .content .ui.vertical.accordion.ui.menu .title {
+    font-style: normal;
+    font-weight: 500;
+    font-family: Noto-Medium;
+    font-size: 15px;
+    line-height: 100%;
+    color: #000000;
+    background: #EBEBEB;
+    padding: 22px 20px 22px 28px;
+    border-bottom: 0.5px solid #111111;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.subscribe-modal.ui.modal .content .ui.vertical.accordion.ui.menu .content {
+    background: #FFFFFF;
+    padding: 20px 18px;
+    border-bottom: 0.5px solid #949494;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.subscribe-modal.ui.modal .content .ui.vertical.accordion.ui.menu .content .item-list {
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 0.5px solid #949494;
+}
+
+.subscribe-modal.ui.modal .content .action-section {
+    text-align: center;
+}
+
+.subscribe-modal.ui.modal .content .action-section .ui.ui.button {
+    font-style: normal;
+    font-family: Noto-Bold;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 100%;
+    color: #FFFFFF;
+    background: #FA7575;
+    border-radius: 4px;
+    width: 54.5%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.subscribe-modal.ui.modal .content .action-section p {
+    font-style: normal;
+    font-family: Noto-Medium;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+    text-decoration-line: underline;
+    color: #000000;
+    cursor: pointer;
+}
+
+.subscribe-modal.ui.modal .content .ui.form {
+    width: 70%;
+    margin: auto;
+}
+
+.subscribe-modal.ui.modal .content .ui.form .fields .field{
+    width: 50%;
+}
+
+.subscribe-modal.ui.modal .content .ui.form .fields .field{
+    width: 50%;
+}
+
+.subscribe-modal.ui.modal .content .ui.form .fields .field>.selection.dropdown {
+    width: 100%;
+    font-family: Noto-Medium;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    padding: 16.5px 20px 16.5px 14px;
+    background: #FFFFFF;
+    border: 0.5px solid #231815;
+    border-radius: 5px
+}
+
+.subscribe-modal.ui.modal .content .ui.form .fields .field>.ui.search.selection.dropdown>input.search{
+    padding: inherit;
+    line-height: 16px;
+}
+
+.subscribe-modal.ui.modal .content .ui.form .fields .field>.ui.selection.dropdown>.dropdown.icon{
+    padding: 16px 10px;
+}
+
+.subscribe-modal.ui.modal .content .ui.form .field {
+    margin-bottom: 40px;
+}
+
+.subscribe-modal.ui.modal .content .ui.form .fields {
+    margin-bottom: 0;
+}
+
+.subscribe-modal.ui.modal .content .ui.form .fields span {
+    padding: 15px 20px;
+}
+
+.subscribe-modal.ui.modal .content .ui.form .field>.ui.label,
+.subscribe-modal.ui.modal .content .ui.form .ui.label {
+    font-style: normal;
+    font-family: Noto-Medium;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    color: #231815;
+    background: transparent;
+    padding: 0 0 10px 0;
+    width: 100%;
+}
+
+.subscribe-modal.ui.modal .content .ui.form .field .ui.input {
+    font-family: Noto-Medium;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    width: 100%;
+}
+
+.subscribe-modal.ui.modal .content .ui.form .field .ui.input input {
+    width: 70%;
+    padding: 15.5px 20px 15.5px 14px;
+    background: #FFFFFF;
+    border: 0.5px solid #231815;
+    border-radius: 5px;
+}
+
+.subscribe-modal.ui.modal .content .ui.form p {
+    font-style: normal;
+    font-family: Noto-Regular;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.subscribe-modal.ui.modal .action-section.unsubscripe{
+    width: 71.5%;
+    margin: auto;
+}
+
+.subscribe-modal.ui.modal .action-section.unsubscripe .btns-section .ui.button:first-child{
+    margin-right: 20px;
+}
+
+.subscribe-modal.ui.modal .action-section.unsubscripe .btns-section .ui.button:nth-child(2){
+    color: #231815;
+    background: #EBEBEB;
+}
+
+.subscribe-modal.ui.modal .action-section .btns-section{
     display: flex;
 }
 
-.service-details .details-section .related-services h2{
-    font-size: 25px;
-    margin-top: 0px;
+
+@media (min-width: 1024px) {
+    .operation-completed-page .ui.button {
+        width: 30%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .operation-completed-page .ui.button {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-details {
+        margin-top: 0;
+    }
+
+    .service-details-page {
+        padding: 0;
+    }
+
+    .service-details .first-img {
+        padding-top: 40px;
+    }
+
+    .service-details .image-section {
+        width: 91.5%;
+    }
+
+    .service-details .details-section {
+        width: 91.5%;
+        margin: 60px auto 0px;
+    }
+
+    .service-details .image-section .category-btn {
+        margin-top: 15px;
+    }
+
+    .service-details .details-section .name h1 {
+        font-size: 20px;
+    }
+
+    .service-details .details-section p {
+        font-size: 12px;
+    }
+
+    .service-details .details-section .price {
+        margin-top: 20px;
+        display: flex;
+    }
+
+    .service-details .details-section .price .ui.button {
+        padding: 17.5px 48px;
+        font-size: 15px;
+        width: 50%;
+    }
+
+    .service-details .details-section .price .ui.button:first-child {
+        margin-right: 10px;
+    }
+
+    .service-details .details-section .price .ui.button:last-child {
+        margin-right: 0px;
+    }
+
+    .service-details .details-section .points-section {
+        margin-top: 20px;
+    }
+
+    .service-details .details-section .points-section h3 {
+        font-size: 15px;
+    }
+
+    .service-details .details-section .points-section .points-list .single-point p {
+        font-size: 12px;
+    }
+
+    .service-details .details-section .points-section .points-list .single-point {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .service-details .details-section .points-section .points-list .single-point img {
+        padding-right: 0;
+        width: 16px;
+        height: 13px;
+        margin-right: 12px;
+    }
+
+    .service-details .details-section .points-section .points-list {
+        margin-top: 10px;
+    }
+
+    .service-details .details-section .images .small-images img {
+        width: 67.5%;
+        margin-right: 10px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .service-details .details-section .images .small-images {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .small-images::-webkit-scrollbar,
+    .lists::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    .service-details .details-section .images .small-images img:last-child {
+        width: 67.5%;
+        margin-right: 0;
+    }
+
+    .service-details .details-section .introduction-section {
+        margin-top: 20px;
+    }
+
+    .service-details .details-section .introduction-section p,
+    .service-details .details-section .introduction-section a {
+        font-size: 12px;
+    }
+
+    .service-details .details-section .custom-list {
+        margin-top: 61px;
+    }
+
+    .service-details .details-section .custom-list .single-custom-item h3,
+    .service-details .details-section .custom-list .single-custom-item p {
+        font-size: 12px;
+        padding: 18px 8px;
+    }
+
+    .service-details .details-section .custom-list .ui.button {
+        margin-top: 50px;
+    }
+
+    .service-details .details-section .border {
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    .service-details .details-section .related-services h2 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .lists {
+        display: flex;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .service-details .details-section .related-services .lists .card {
+        margin-left: 0;
+    }
+
+    .subscribe-modal.ui.modal {
+        top: 41px;
+        width: 91.5%;
+        left: 52%;
+    }
+
+    .subscribe-modal.ui.modal .content {
+        padding: 20px !important;
+    }
+
+    .subscribe-modal.ui.modal .content .header-section .header-text {
+        font-size: 15px !important;
+        margin: 0 auto 20px;
+    }
+
+    .subscribe-modal.ui.modal .content .header-section p:nth-child(2) {
+        margin-bottom: 10px;
+    }
+
+    .subscribe-modal.ui.modal .content .ui.vertical.accordion.ui.menu {
+        width: 100%;
+        margin: 10px auto 20px;
+    }
+
+    .subscribe-modal.ui.modal .content .ui.vertical.accordion.ui.menu .title,
+    .subscribe-modal.ui.modal .content .ui.vertical.accordion.ui.menu .content {
+        padding: 16px !important;
+    }
+
+    .subscribe-modal.ui.modal .content .action-section .ui.ui.button {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .subscribe-modal.ui.modal .content .ui.form {
+        width: 100%;
+    }
+
+    .subscribe-modal.ui.modal .content .ui.form .field {
+        margin-bottom: 20px;
+    }
+
+    .subscribe-modal.ui.modal .content .ui.form .fields .field {
+        width: 45%;
+        padding: 0;
+    }
+
+    .subscribe-modal.ui.modal .content .ui.form .field .ui.input input {
+        padding: 12.5px 20px 12.5px 14px;
+    }
+
+    .subscribe-modal.ui.modal .content .ui.form .fields {
+        margin: 0;
+        width: 100%;
+    }
+
+    .subscribe-modal.ui.modal .content .ui.form .fields span {
+        padding: 10px 8px;
+    }
+
+    .operation-completed-page .text-section {
+        padding: 40px 16px;
+    }
+
+    .operation-completed-page .text-section h1 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+
+    .operation-completed-page .text-section img {
+        width: 50px;
+    }
+
+    .operation-completed-page .border-section {
+        width: 100%;
+        padding: 40px 10px;
+        margin-bottom: 40px;
+    }
+
+    .operation-completed-page .border-section h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .operation-completed-page .ui.button {
+        width: 87.5%;
+    }
+
+    .subscribe-modal.ui.modal .content .header-section p:last-child{
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .subscribe-modal.ui.modal .action-section.unsubscripe{
+        width: 100%;
+    }
+
+    .subscribe-modal.ui.modal .action-section .btns-section{
+        display: block;
+    }
 }

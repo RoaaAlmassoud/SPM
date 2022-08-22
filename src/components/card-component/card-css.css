@@ -1,6 +1,6 @@
 .card {
     width: 301px;
-    height: 319px;
+    min-height: 319px;
     background: #FFFFFF;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -8,13 +8,17 @@
     margin-bottom: 7px;
     margin-left: 5px;
     cursor: pointer;
+    display: inline-block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .card .service-image {
     width: 300px;
     height: 125px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .card .actions {
@@ -24,10 +28,24 @@
 }
 
 .card .actions .like-image,
-.card .actions .plus-image {
+.card .actions .plus-image,
+.card .actions .edit {
     margin-left: 10px;
     cursor: pointer;
     display: inline-flex;
+}
+
+.card .actions .edit {
+    vertical-align: top;
+    text-decoration: underline;
+    margin-bottom: 0;
+    padding-top: 5px;
+    font-style: normal;
+    font-family: Noto-Medium;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 0.1em;
+    color: #231815;
 }
 
 .card .description-section {
@@ -42,6 +60,13 @@
 
 .card .description-section h4 {
     margin-bottom: 6px;
+    font-size: 16px !important;
+    font-family: Noto-Bold;
+}
+
+.card .description-section p {
+    font-size: 12px;
+    font-family: Noto-Regular;
 }
 
 .card .price-section {
@@ -52,6 +77,7 @@
 .card .price-section h3.ui.header {
     font-size: 20px;
     color: #231815;
+    font-family: Noto-Bold;
 }
 
 .rc-slider {
@@ -278,6 +304,7 @@
         transform-origin: 50% 100%;
         transform: scale(0, 0);
     }
+
     100% {
         transform-origin: 50% 100%;
         transform: scale(1, 1);
@@ -289,6 +316,7 @@
         transform-origin: 50% 100%;
         transform: scale(1, 1);
     }
+
     100% {
         opacity: 0;
         transform-origin: 50% 100%;

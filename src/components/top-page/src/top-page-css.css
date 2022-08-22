@@ -1,18 +1,18 @@
-.top-page .latest-services{
+.top-page .latest-services {
     height: 518px;
     background: #F58A7C;
     padding: 60px 0 82px 80px;
 }
 
-.top-page .latest-services .latest-services-header{
-    margin-bottom: 32px;
+.top-page .latest-services .latest-services-header {
+    margin-bottom: 16px;
 }
 
 .top-page .latest-services h2,
-.top-page .category-header h2{
-    font-family: 'Noto Sans JP';
+.top-page .category-header h2 {
+    font-family: Noto-Bold;
     font-style: normal;
-    font-weight: 700;
+    /* font-weight: 700; */
     font-size: 25px;
     line-height: 100%;
     letter-spacing: 0.1em;
@@ -21,11 +21,12 @@
     padding-right: 32px;
 }
 
-.top-page .category-header h2{
+.top-page .category-header h2 {
     color: #E84341;
 }
 
-.top-page .latest-services .ui.header.show-more{
+.top-page .latest-services .ui.header.show-more {
+    font-family: Noto-Bold;
     color: #FFFFFF;
 }
 
@@ -33,56 +34,56 @@
     display: inline-flex;
 }*/
 
-.main-categories .one-category{
+.main-categories .one-category {
     padding: 50px 0px 80px 50px;
 }
 
-.main-categories .one-category .category-header{
+.main-categories .one-category .category-header {
     display: table;
 }
 
-.main-categories .one-category .category-header img{
+.main-categories .one-category .category-header img {
     width: 34px;
     height: 34px;
 }
 
 .main-categories .one-category .category-header h2,
-.main-categories .one-category .category-header h4{
+.main-categories .one-category .category-header h4 {
     display: table-cell;
     vertical-align: top;
 }
 
-.main-categories .one-category .category-header h2{
+.main-categories .one-category .category-header h2 {
     padding: 3px 13px 0 14px;
 }
 
-.main-categories .one-category .category-header h4{
+.main-categories .one-category .category-header h4 {
     padding: 8px 5px 0 10px;
 }
 
-.top-page .one-category .category-header{
-    margin-bottom: 25px;
+.top-page .one-category .category-header {
+    margin-bottom: 5px;
 }
 
-.top-page .search-services .ui.breadcrumb{
+.top-page .search-services .ui.breadcrumb {
     margin: 50px 0px 20px 80px;
 }
 
-.top-page .search-services .cards-list .card{
+.top-page .search-services .cards-list .card {
     display: inline-block;
     margin-right: 19px;
 }
 
-.top-page .search-services .cards-list{
+.top-page .search-services .cards-list {
     background: #FAFAFA;
     padding: 50px 70px;
 }
 
-.top-page .search-services .cards-list .filtered-categories i.icon.filter:before{
+.top-page .search-services .cards-list .filtered-categories i.icon.filter:before {
     font-size: 32px;
 }
 
-.top-page .search-services .cards-list .filtered-categories i.icon.filter{
+.top-page .search-services .cards-list .filtered-categories i.icon.filter {
     margin-bottom: 6px;
 }
 
@@ -90,18 +91,18 @@
     padding: 0px 0px 120px 12px;
 }
 
-.top-page .search-services .cards-list .filtered-categories .ui.label.first{
+.top-page .search-services .cards-list .filtered-categories .ui.label.first {
     margin-left: 18px;
 }
 
-.top-page .search-services .cards-list .filtered-categories .ui.label{
+.top-page .search-services .cards-list .filtered-categories .ui.label {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     margin-right: 10px;
     border-radius: 20px;
     padding: 11px 10px 11px 20px;
-    font-family: 'Noto Sans';
+    font-family: Noto-Bold;
     font-style: normal;
-    font-weight: 700;
+    /* font-weight: 700; */
     font-size: 12px;
     line-height: 12px;
     letter-spacing: 0.1em;
@@ -109,9 +110,41 @@
     background: #E4E4E4;
 }
 
-.top-page .search-services .cards-list .filtered-categories .ui.label>img{
+.top-page .search-services .cards-list .filtered-categories .ui.label>img {
     width: 15px !important;
     height: 15px !important;
     margin-left: 15px;
     cursor: pointer;
+}
+
+.top-page .about-section .text-section img {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .top-page .latest-services {
+        height: auto;
+        padding: 40px 0 40px 16px;
+    }
+
+    .top-page .latest-services h2{
+        font-size: 20px !important;
+    }
+
+    .top-page .latest-services .ui.header.show-more{
+        font-size: 12px;
+    }
+
+    .main-categories .one-category .category-header h2 {
+        padding: 3px 13px 0 10px;
+        font-size: 20px;
+    }
+
+    .main-categories .one-category .category-header h4{
+        font-size: 12px;
+    }
+
+    .footer-section img{
+        width: 95%;
+    }
 }

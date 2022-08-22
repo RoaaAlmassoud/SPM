@@ -1,10 +1,10 @@
-import React, {Component} from 'react'
-import {withRouter} from 'react-router-dom';
+import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom';
 import Footer from './footer'
 import Helper from '../../utils/helper'
-import {Menu, Dropdown, Icon, Search, Button, Loader} from "semantic-ui-react"
+import { Menu, Dropdown, Icon, Search, Button, Loader } from "semantic-ui-react"
 import MainApi from "./main-api"
-import {slide as Burger} from 'react-burger-menu'
+import { slide as Burger } from 'react-burger-menu'
 
 
 class MainLayout extends Component {
@@ -22,7 +22,8 @@ class MainLayout extends Component {
             filteredCategories: [],
             innerWidth: window.innerWidth,
             fullFilteredCats: [],
-            showMobileSearch: false
+            showMobileSearch: false,
+            showUserItems: false
         }
     }
 
@@ -33,7 +34,7 @@ class MainLayout extends Component {
     }
 
     componentWillMount() {
-        window.onresize = this.changeInnerWidth;
+        window.addEventListener('resize', this.changeInnerWidth);
     }
 
     async componentDidMount() {
@@ -94,19 +95,21 @@ class MainLayout extends Component {
                 categories: categories,
                 categoriesList: categoriesList,
                 loading: false
+            }, () => {
+                window.addEventListener('resize', this.changeInnerWidth);
             })
         }
     }
 
     openCategoriesList = () => {
-        let {showCategoriesList} = this.state;
+        let { showCategoriesList } = this.state;
         this.setState({
             showCategoriesList: !showCategoriesList
         })
     };
 
     handleSearchChange = (e, data) => {
-        let {categoriesList} = this.state;
+        let { categoriesList } = this.state;
         let categoriesText = this.props.location.state ? this.props.location.state.categories ? this.props.location.state.categories : '' : '';
         let fullFilteredCats = this.props.location.state ? this.props.location.state.fullFilteredCats ? this.props.location.state.fullFilteredCats : '' : '';
         this.props.location.state = {
@@ -126,7 +129,7 @@ class MainLayout extends Component {
     }
 
     onChange = (event, data) => {
-        let {filteredCategories, categoriesList, fullFilteredCats} = this.state;
+        let { filteredCategories, categoriesList, fullFilteredCats } = this.state;
         let selectedCategory = data.value;
         let categories = []
         let selectedObject = {}
@@ -162,21 +165,47 @@ class MainLayout extends Component {
         })
     };
 
+    registerPage = () => {
+        this.props.history.push('/register')
+    };
+
+    loginPage = () => {
+        this.props.history.push('/login')
+    };
+
     showSearch = () => {
-        let {showMobileSearch} = this.state;
+        let { showMobileSearch } = this.state;
         this.setState({
             showMobileSearch: !showMobileSearch
         })
     }
 
+    showUserItems = () => {
+        let { showUserItems } = this.state;
+        this.setState({
+            showUserItems: !showUserItems
+        })
+    }
+
+
+    handleItemClick = (e, { name }) => {
+        this.setState({
+            activeItem: name,
+            menuOpen: false
+        }, () => {
+            this.props.history.push(`/${name}`)
+        })
+    };
+
+
     render() {
-        let {categories, loading, showCategoriesList, childrenRefreshKey, filteredCategories, innerWidth, showMobileSearch} = this.state;
+        let { categories, loading, showCategoriesList, childrenRefreshKey, filteredCategories, innerWidth, showMobileSearch, showUserItems } = this.state;
         let name = this.props.location.state ? this.props.location.state.name ? this.props.location.state.name : '' : '';
         let fullFilteredCats = this.props.location.state ? this.props.location.state.fullFilteredCats ? this.props.location.state.fullFilteredCats : '' : '';
-        let user = localStorage.getItem('accessToken');
+        let user = localStorage.getItem('api_token');
         return (
             <>
-                <Loader active={loading}/>
+                <Loader active={loading} />
                 <div className={`${innerWidth <= 1024 ? 'mobile' : ''} main-container`}>
                     <div className={`${showMobileSearch ? 'mobile' : ''} header-section`}>
                         {
@@ -187,12 +216,12 @@ class MainLayout extends Component {
                                             <div className={'mobile-search-section'}>
                                                 <div className={"close-img"}>
                                                     <img src={'/images/main-images/close-black.svg'}
-                                                         onClick={() => this.showSearch()}
+                                                        onClick={() => this.showSearch()}
                                                     />
                                                 </div>
                                                 <Menu.Item>
                                                     <Search
-                                                        input={{icon: 'search', iconPosition: 'left'}}
+                                                        input={{ icon: 'search', iconPosition: 'left' }}
                                                         placeholder='サービスをキーワードで検索'
                                                         onSearchChange={(e, data) => this.handleSearchChange(e, data)}
                                                         results={[]}
@@ -202,37 +231,81 @@ class MainLayout extends Component {
                                             </div>
                                             :
                                             <>
-                                                <Burger style={{width: '5%'}} right isOpen={this.state.menuOpen}
-                                                    //onStateChange={(state) => this.handleStateChange(state)}
+                                                <Burger style={{ width: '5%' }} right isOpen={this.state.menuOpen}
+                                                //onStateChange={(state) => this.handleStateChange(state)}
                                                 >
-                                                    <Menu.Item
-                                                        onClick={this.handleItemClick}
-                                                    >
-                                                        <h3>無料ユーザー登録</h3>
-                                                    </Menu.Item>
-                                                    <Menu.Item
-                                                        onClick={this.handleItemClick}
-                                                    >
-                                                        <h3>ログイン</h3>
-                                                    </Menu.Item>
+                                                    {
+                                                        user ?
+                                                            <>
+
+                                                                <Menu.Item className='name-item'>
+                                                                    <div className='name-section'>
+                                                                        <img src={"/images/main-images/user-white.svg"} />
+                                                                        <span>{`${localStorage.getItem('name')} ${localStorage.getItem('surname')}`}</span>
+                                                                    </div>
+                                                                    <div className='logout-section' 
+                                                                    onClick={() => window.location.href = '/logout'}>
+                                                                        <span>ログアウト</span>
+                                                                        <img src={"/images/main-images/arrow-right.svg"} />
+                                                                    </div>
+
+                                                                </Menu.Item>
+                                                                <Menu.Item
+                                                                className='first-tab tab'
+                                                                    onClick={this.handleItemClick}
+                                                                    name='my-page'
+                                                                >
+                                                                    <h3>マイページ</h3>
+                                                                </Menu.Item>
+                                                                <Menu.Item
+                                                                 className='second-tab tab'
+                                                                    name='my-page'
+                                                                    onClick={this.handleItemClick}
+                                                                >
+                                                                    <h3>{localStorage.getItem('user_type') === 'user'?
+                                                                    '気になるリスト': '利用者一覧'}</h3>
+                                                                </Menu.Item>
+                                                            </>
+                                                            :
+                                                            <>
+                                                                <Menu.Item
+                                                                 className='first-tab tab'
+                                                                    onClick={this.handleItemClick}
+                                                                    name='register'
+                                                                >
+                                                                    <h3>無料ユーザー登録</h3>
+                                                                </Menu.Item>
+                                                                <Menu.Item
+                                                                className='second-tab tab'
+                                                                    name='login'
+                                                                    onClick={this.handleItemClick}
+                                                                >
+                                                                    <h3>ログイン</h3>
+                                                                </Menu.Item>
+                                                            </>
+                                                    }
+
                                                     <div className={'static-pages'}>
                                                         <Menu.Item
                                                             onClick={this.handleItemClick}
+                                                            name='operating-company'
                                                         >
                                                             <h3>運営会社</h3>
                                                         </Menu.Item>
                                                         <Menu.Item
                                                             onClick={this.handleItemClick}
+                                                            name='privacy-policy'
                                                         >
                                                             <h3>プライバシーポリシー</h3>
                                                         </Menu.Item>
                                                         <Menu.Item
-                                                            name='trips'
+                                                            name='terms'
                                                             onClick={this.handleItemClick}
                                                         >
                                                             <h3>利用規約</h3>
                                                         </Menu.Item>
                                                         <Menu.Item
+                                                            name='inquiry'
                                                             onClick={this.handleItemClick}
                                                         >
                                                             <h3>お問い合わせ</h3>
@@ -242,22 +315,23 @@ class MainLayout extends Component {
                                                 </Burger>
                                                 <div className={'navbar-mobile-elements'}>
                                                     <Menu.Item
+                                                        name=''
                                                         onClick={this.handleItemClick}
                                                     >
                                                         <img src={'/images/main-images/logo.svg'}
-                                                             alt={'img'}
-                                                             className={'logo-img'}
+                                                            alt={'img'}
+                                                            className={'logo-img'}
                                                         />
                                                     </Menu.Item>
                                                     {
                                                         !showMobileSearch ?
                                                             <Menu.Item
-                                                                onClick={this.handleItemClick}
+                                                                // onClick={this.handleItemClick}
                                                             >
                                                                 <img src={'/images/main-images/mobile-search.svg'}
-                                                                     className={'show-mobile-search'}
-                                                                     alt={'img'}
-                                                                     onClick={() => this.showSearch()}
+                                                                    className={'show-mobile-search'}
+                                                                    alt={'img'}
+                                                                    onClick={() => this.showSearch()}
                                                                 />
                                                             </Menu.Item>
                                                             : null
@@ -273,30 +347,65 @@ class MainLayout extends Component {
                                 <Menu id={"navbar"} borderless className={"navbar-section"}>
                                     <Menu.Item>
                                         <img src={'/images/main-images/logo.svg'}
-                                             alt={'img'}
-                                             className={'logo-img'}
+                                            alt={'img'}
+                                            className={'logo-img'}
+                                            onClick={() => {
+                                                window.location = window.location.origin
+                                            }
+                                            }
                                         />
                                     </Menu.Item>
                                     <Menu.Item>
                                         <Search
-                                            input={{icon: 'search', iconPosition: 'left'}}
+                                            input={{ icon: 'search', iconPosition: 'left' }}
                                             placeholder='サービスをキーワードで検索'
                                             onSearchChange={(e, data) => this.handleSearchChange(e, data)}
                                             results={[]}
                                             value={name}
                                         />
                                     </Menu.Item>
-                                    <Menu.Menu position='right'>
-                                        <div className={'right-menu-text'}>
-                                            <img src={"/images/main-images/arrow.svg"}/>
-                                            <span>ログイン</span>
-                                        </div>
+                                    {
+                                        user ?
+                                            <>
+                                                <Menu.Menu position='right' className={'user-menu'} onClick={() => this.showUserItems()}>
+                                                    <div className={'user-menu'}>
+                                                        <img src={"/images/main-images/user-black.svg"} />
+                                                        <span>{`${localStorage.getItem('name')} ${localStorage.getItem('surname')}`}</span>
+                                                        <img src={`/images/main-images/${showUserItems ? 'arrow-down-black.svg' : 'arrow-right-black.svg'}`} size={'large'} />
+                                                    </div>
+                                                </Menu.Menu>
+                                                {
+                                                    showUserItems ?
+                                                        < div className='user-items'>
+                                                            <p onClick={() => window.location.href = '/my-page'}>
+                                                                マイページ
+                                                                <img src='/images/main-images/arrow-right-black.svg' />
+                                                            </p>
+                                                            <p onClick={() => window.location.href = '/my-page'}>
+                                                                利用者一覧
+                                                                <img src='/images/main-images/arrow-right-black.svg' />
+                                                            </p>
+                                                            <p onClick={() => window.location.href = '/logout'}>
+                                                                ログアウトƒ
+                                                                <img src='/images/main-images/arrow-right-black.svg' />
+                                                            </p>
+                                                        </div>
+                                                        : null
+                                                }
+                                            </>
+                                            :
+                                            <Menu.Menu position='right'>
+                                                <div className={'right-menu-text'} onClick={() => this.loginPage()}>
+                                                    <img src={"/images/main-images/arrow.svg"} />
+                                                    <span>ログイン</span>
+                                                </div>
 
-                                        <Button>
-                                            <img src={"/images/main-images/user.svg"}/>
-                                            <span>無料ユーザー登録</span>
-                                        </Button>
-                                    </Menu.Menu>
+                                                <Button onClick={() => this.registerPage()}>
+                                                    <img src={"/images/main-images/user.svg"} />
+                                                    <span>無料ユーザー登録</span>
+                                                </Button>
+                                            </Menu.Menu>
+                                    }
                                     {
                                         user ?
                                             null
@@ -344,18 +453,18 @@ class MainLayout extends Component {
 
                         <div className={'category-section'}>
                             <p onClick={() => this.openCategoriesList()}>カテゴリーから探す
-                                <Icon name={`angle ${showCategoriesList ? 'down' : 'right'}`} size={'large'}/>
+                                <Icon name={`angle ${showCategoriesList ? 'down' : 'right'}`} size={'large'} />
                             </p>
                         </div>
                         <div className={`${showCategoriesList ? 'show' : 'hide'} categories-list`}>
                             {
                                 categories.map((category, index) => {
-                                    return <Dropdown style={{color: category.color}}
-                                                     key={index}
-                                                     text={category.name}
-                                                     options={category.children}
-                                                     icon={'angle right'}
-                                                     onChange={(event, data) => this.onChange(event, data)}
+                                    return <Dropdown style={{ color: category.color }}
+                                        key={index}
+                                        text={category.name}
+                                        options={category.children}
+                                        icon={'angle right'}
+                                        onChange={(event, data) => this.onChange(event, data)}
                                     />
                                 })
                             }
@@ -394,7 +503,7 @@ class MainLayout extends Component {
                     <div className={'children'} key={childrenRefreshKey}>
                         {this.props.children}
                     </div>
-                    <Footer notify={this.props.notify} props={this.props}/>
+                    <Footer notify={this.props.notify} props={this.props} />
                 </div>
             </>
         );

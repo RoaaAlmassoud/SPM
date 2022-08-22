@@ -1,0 +1,940 @@
+.register-container {
+    padding: 50px 80px;
+}
+
+.register-container .ui.breadcrumb {
+    width: 100%;
+    border-bottom: 5px solid #F6F6F6;
+    padding-bottom: 17px;
+}
+
+.register-container .ui.form {
+    background: #F8F8F8;
+    width: 88%;
+    margin: 56px auto;
+    text-align: center;
+    padding: 73px 10%;
+}
+
+.register-container .ui.form.inquiry-form {
+    width: 83%;
+    padding: 50px 10.5%;
+}
+
+.register-container .ui.form.inquiry-form h1 {
+    margin-bottom: 50px;
+}
+
+.register-container .ui.form.inquiry-form .form-header p {
+    color: #C94420;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.register-container .ui.form.inquiry-form .field {
+    width: 100%;
+}
+
+.register-container .ui.form.inquiry-form .required-span {
+    color: #C94420;
+}
+
+.register-container .ui.form.inquiry-form .field textarea {
+    border: 0.5px solid #373737;
+    border-radius: 5px;
+}
+
+.register-container .ui.form.inquiry-form .action-section .ui.button {
+    width: 41.83%;
+}
+
+.register-container .ui.form.inquiry-form .action-section p {
+    margin-bottom: 10px;
+    font-family: Noto-Medium;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.register-container .ui.form.inquiry-form .action-section p img {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.register-container .ui.form.inquiry-form .action-section p span {
+    color: #2665C3;
+    text-decoration: underline;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.register-container .ui.form.inquiry-form .action-section {
+    margin-top: 50px;
+}
+
+.register-container .ui.form .switch-section {
+    text-align: right;
+    margin-top: 50px;
+}
+
+.register-container .ui.form h1 {
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-family: Noto-Bold;
+    color: #231815;
+}
+
+.register-container .ui.form p {
+    font-family: Noto-Regular;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    letter-spacing: 0.05em;
+    color: #231815;
+}
+
+.register-container .ui.form .register-options {
+    margin-top: 43px;
+}
+
+.register-container .ui.form .register-options img {
+    margin: 0 10px 15px 10px;
+}
+
+.register-container .ui.form .ui.horizontal.divider {
+    margin-top: 25px;
+    font-style: normal;
+    font-family: Noto-Medium;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 160%;
+    text-align: center;
+    color: #231815;
+}
+
+.register-container .ui.form .ui.horizontal.divider:before {
+    background-position: right 3em top 50%;
+}
+
+.register-container .ui.form .ui.horizontal.divider:after {
+    background-position: left 3em top 50%;
+}
+
+.register-container .ui.form .fields-section {
+    text-align: left;
+}
+
+.register-container .ui.form .fields-section .ui.label {
+    background: transparent;
+    padding-left: 0;
+    padding-bottom: 10px;
+    font-family: Noto-Medium;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    color: #231815;
+}
+
+.register-container .ui.form .field .ui.input,
+.register-container .ui.form .fields .field .ui.input,
+.register-container .ui.form .wide.field .ui.input {
+    background: #FFFFFF;
+    border: 0.5px solid #231815;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+}
+
+.register-container .ui.form .field .ui.input input,
+.register-container .ui.form .fields .field .ui.input input,
+.register-container .ui.form .wide.field .ui.input input {
+    padding: 15px 10px 15px 14px;
+}
+
+.register-container .ui.form .dob-fields {
+    width: 70%;
+}
+
+.register-container .ui.form .ui.radio.checkbox {
+    width: 15%;
+}
+
+.register-container .ui.form .ui.radio.checkbox label {
+    font-size: 15px;
+    font-style: normal;
+    font-family: Noto-Medium;
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    color: #000000;
+}
+
+.register-container .ui.form .ui.radio.checkbox label:before {
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+}
+
+.register-container .ui.form .ui.radio.checkbox label:after {
+    top: -4px;
+    left: -4px;
+    width: 30px;
+    height: 30px;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    border: 8px solid #2665C3;
+    background-color: transparent;
+}
+
+.register-container .ui.form .field {
+    width: 60%;
+}
+
+.register-container .ui.form .field.address-field .ui.input {
+    margin-bottom: 10px;
+}
+
+.register-container .ui.form .field.address-field .ui.input.post-code-input {
+    width: 38%;
+    display: block;
+}
+
+.register-container .ui.form .field.address-field .ui.input.post-code-input input {
+    width: 100%;
+}
+
+.register-container .ui.form .action-section .ui.button,
+.reset-password-modal .content .action-section .ui.button {
+    font-style: normal;
+    font-family: Noto-Bold;
+    /* font-weight: 700; */
+    font-size: 15px;
+    line-height: 100%;
+    color: #FFFFFF;
+    background: #FA7575;
+    border-radius: 4px;
+    width: 50%;
+    height: 50px;
+    margin-top: 40px;
+}
+
+.register-container .ui.form.provider-form {
+    text-align: left;
+}
+
+.register-container .ui.form.provider-form .fields-section {
+    margin-top: 40px;
+}
+
+.register-container .ui.form .custom-width {
+    width: 28%;
+}
+
+.register-container .ui.form .custom-check-width .ui.radio.checkbox {
+    width: 20%;
+}
+
+.register-container .ui.form .action-section,
+.reset-password-modal .content .action-section {
+    text-align: center;
+}
+
+.register-container .form-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.register-container .form-container h1 {
+    font-family: Noto-Bold;
+    /* font-weight: 700; */
+    font-size: 25px;
+    line-height: 100%;
+    color: #231815;
+}
+
+.register-container .form-container.provider .ui.form {
+    width: 42%;
+    padding: 50px;
+}
+
+.register-container .form-container.provider .ui.form .fields-section {
+    width: 100%;
+}
+
+.register-container .form-container.user .ui.form {
+    width: 75%;
+    display: flex;
+    padding: 50px;
+}
+
+
+.register-container .form-container .ui.form .field {
+    width: 100%;
+}
+
+.register-container .form-container.user .ui.form .login-options {
+    text-align: left;
+    border-left: 0.5px solid #231815;
+    width: 44%;
+    padding-left: 50px;
+}
+
+.register-container .form-container.user .ui.form .login-options p {
+    font-weight: 500;
+    font-family: Noto-Medium;
+    font-size: 15px;
+    line-height: 22px;
+    color: #231815;
+    margin-bottom: 10px;
+}
+
+.register-container .form-container.user .ui.form .login-options img {
+    margin-bottom: 15px;
+}
+
+.register-container .form-container.user .ui.form .fields-section {
+    width: 56%;
+    padding-right: 50px;
+}
+
+.register-container .form-container .ui.form .fields-section .forget-password-section {
+    text-align: right;
+}
+
+.register-container .form-container .ui.form .fields-section a {
+    /* font-weight: 500; */
+    font-family: Noto-Medium;
+    font-size: 15px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #0077CE;
+    cursor: pointer;
+}
+
+.register-container .form-container .ui.form .fields-section .action-section .ui.button {
+    width: 80%;
+}
+
+.register-container .switch-section {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.register-container .switch-section h1 {
+    font-family: Noto-Bold;
+    /* font-weight: 700; */
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    color: #231815;
+    margin-bottom: 30px;
+}
+
+.register-container .switch-section .ui.button {
+    font-family: Noto-Bold;
+    width: 27%;
+    font-style: normal;
+    /* font-weight: 700; */
+    font-size: 15px;
+    line-height: 100%;
+    border-radius: 4px;
+    height: 50px;
+}
+
+.register-container .switch-section .switch-register .ui.button {
+    color: #FFFFFF;
+    background: #FA7575;
+}
+
+.register-container .switch-section .switch-login .ui.button {
+    color: #231815;
+    background: #EBEBEB;
+}
+
+.register-container .switch-section .switch-register {
+    margin-bottom: 100px;
+}
+
+.reset-password-modal.ui.modal .content {
+    padding: 18px 20px;
+}
+
+.reset-password-modal .content .close-section {
+    text-align: right;
+    cursor: pointer;
+}
+
+.reset-password-modal .content .header-section {
+    margin-top: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.reset-password-modal .content .header-section p {
+    font-family: Noto-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 120%;
+    letter-spacing: 0.1em;
+}
+
+.reset-password-modal .content .header-section p:first-child {
+    margin-bottom: 1px;
+}
+
+
+.reset-password-modal.ui.modal>:last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.reset-password-modal.ui.modal>.icon:first-child+*,
+.reset-password-modal.ui.modal>:first-child:not(.icon) {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.reset-password-modal.ui.modal {
+    border-radius: 20px;
+    width: 55.556%;
+    top: 87px;
+}
+
+.reset-password-modal .content .ui.form {
+    margin: 33px auto 35px;
+    width: 50%;
+}
+
+.reset-password-modal .content .ui.form .field label {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-family: Noto-Medium;
+    font-size: 15px;
+    line-height: 20px;
+    color: #231815;
+    margin-bottom: 8px;
+}
+
+.reset-password-modal .content .ui.form .field .ui.input {
+    height: 57px;
+    border: 0.5px solid #231815;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.reset-password-modal .content .ui.form .field .ui.input input {
+    padding: 21px 14px;
+}
+
+.reset-password-modal .content .action-section .ui.button {
+    font-family: Noto-Bold;
+    font-style: normal;
+    /* font-weight: 700; */
+    line-height: 100%;
+    width: 37.8%;
+    margin: 0 auto;
+}
+
+.reset-password-modal .content .action-section {
+    margin-bottom: 57px;
+}
+
+.register-container .description-section {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.register-container .description-section .header-text h1 {
+    font-family: Noto-Bold;
+    font-style: normal;
+    /* font-weight: 700; */
+    font-size: 25px;
+    line-height: 100%;
+    color: #231815;
+    margin-bottom: 52px;
+}
+
+.register-container .description-section .header-text {
+    margin-bottom: 40px;
+}
+
+.register-container .description-section .header-text p {
+    font-family: Noto-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #231815;
+}
+
+.register-container .description-section .header-text .first-text {
+    margin-bottom: 1px;
+}
+
+.register-container .description-section .action-section {
+    text-align: center;
+}
+
+.register-container .description-section .action-section .ui.button {
+    font-family: Noto-Bold;
+    font-style: normal;
+    /* font-weight: 700; */
+    font-size: 15px;
+    line-height: 22px;
+    border-radius: 4px;
+    width: 15.625%;
+}
+
+.register-container .description-section .action-section .ui.button:first-child {
+    background: #FA7575;
+    color: #FFFFFF;
+    margin-right: 25px;
+}
+
+.register-container .description-section .action-section .ui.button:last-child {
+    background: #EBEBEB;
+    color: #231815;
+}
+
+.register-container.completed .description-section .header-text h1 {
+    margin-bottom: 50px;
+}
+
+.register-container.completed .description-section .first-section {
+    margin-bottom: 34px;
+}
+
+.register-container.completed .description-section .second-section {
+    margin-bottom: 42px;
+}
+
+.register-container.completed .description-section p {
+    font-family: Noto-Medium;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #231815;
+    margin-bottom: 4px;
+}
+
+.register-container.delete .description-section .action-section .ui.button {
+    width: 15.7%;
+}
+
+.register-container.delete.completed .description-section .first-section {
+    margin-bottom: 50px;
+}
+
+.register-container.completed .description-section .second-section p span {
+    color: #0077CE;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.register-container.completed .description-section .action-section .ui.button {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-right: 0;
+}
+
+.welcome-modal.ui.modal {
+    top: 85px;
+    width: 55.95%;
+    height: 459px;
+}
+
+.welcome-modal.ui.modal .content {
+    padding: 0;
+}
+
+.welcome-modal.ui.modal .content .main {
+    display: flex;
+}
+
+/* .welcome-modal.ui.modal .content .main img:first-child{
+    position: fixed;
+    left: 0;
+}
+
+.welcome-modal.ui.modal .content .main img:nth-child(2){
+    position: fixed;
+    right: 0;
+} */
+
+.welcome-modal.ui.modal .content .main .content-section {
+    padding-top: 111px;
+    text-align: center;
+    width: 53%;
+}
+
+.welcome-modal.ui.modal .content .main .content-section .header-text {
+    font-size: 30px;
+    font-family: Noto-Medium;
+    margin-bottom: 40px;
+}
+
+.welcome-modal.ui.modal .content .main .content-section .text-section p {
+    font-size: 15px;
+    font-family: Noto-Regular;
+    margin-bottom: 2px;
+}
+
+.welcome-modal.ui.modal .content .main .content-section .action-section .ui.button {
+    color: #FFFFFF;
+    background: #FA7575;
+    font-size: 15px;
+    padding: 17.5px;
+    font-family: Noto-Bold;
+    width: 77.2%;
+    margin-bottom: 30px;
+    margin-top: 38px;
+}
+
+.welcome-modal.ui.modal .content .main .content-section .action-section p {
+    font-size: 15px;
+    font-family: Noto-Bold;
+    text-decoration: underline;
+    color: #231815;
+}
+
+@media (max-width: 1324px) {
+    .register-container .form-container.provider .ui.form {
+        width: 60%;
+    }
+
+    .register-container .form-container.user .ui.form {
+        width: 95%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .register-container .description-section .action-section .ui.button {
+        width: 30%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .register-container .ui.form .custom-width {
+        width: 50%;
+    }
+
+    .register-container .ui.form .custom-check-width .ui.radio.checkbox {
+        width: auto;
+        padding-right: 20px;
+    }
+
+    .register-container .ui.form {
+        width: 100%;
+    }
+
+    .register-container .ui.form .dob-fields {
+        width: 34%;
+    }
+
+    .register-container .form-container.provider .ui.form {
+        width: 75%;
+    }
+
+    .register-container .description-section .action-section .ui.button {
+        width: 35%;
+    }
+
+    .register-container .form-container.user .ui.form .login-options img {
+        width: 100%;
+    }
+
+    .welcome-modal.ui.modal .content .main img {
+        width: 23%;
+    }
+
+    .welcome-modal.ui.modal .content .main .content-section .header-text {
+        font-size: 25px;
+    }
+
+    .register-container.delete .description-section .action-section .ui.button {
+        width: 30%;
+    }
+
+
+    .welcome-modal.ui.modal .content .main .content-section .action-section .ui.button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .register-container .ui.form .field .ui.input input,
+    .register-container .ui.form .fields .field .ui.input input,
+    .register-container .ui.form .wide.field .ui.input input {
+        padding: 12px 10px 12px 14px;
+    }
+
+    .register-container.delete.completed .description-section .first-section {
+        margin-bottom: 40px;
+    }
+
+    .register-container.delete .description-section .header-text {
+        margin-bottom: 30px;
+    }
+
+    .register-container.delete .description-section .action-section .ui.button {
+        width: 100%;
+    }
+
+    .register-container.delete.completed .description-section p {
+        font-size: 14px;
+    }
+
+    .register-container .ui.form h1 {
+        font-size: 18px;
+    }
+
+    .register-container .ui.form p {
+        font-size: 14px;
+    }
+
+    .register-container .ui.form .register-options {
+        margin-top: 40px;
+    }
+
+    .register-container .ui.form .ui.horizontal.divider {
+        margin-top: 34px;
+        margin-bottom: 34px;
+        font-size: 14px;
+    }
+
+    .register-container .ui.form .field {
+        margin-bottom: 20px !important;
+        width: 100%;
+    }
+
+    .register-container .ui.form .fields,
+    .register-container .ui.form .fields .field {
+        margin-bottom: 10px !important;
+    }
+
+    .register-container .ui.form .fields-section .ui.label {
+        font-size: 14px;
+        padding-bottom: 8px;
+        padding-top: 1px;
+    }
+
+    .register-container .ui.form .field .ui.input,
+    .register-container .ui.form .fields .field .ui.input,
+    .register-container .ui.form .wide.field .ui.input {
+        font-size: 14px;
+    }
+
+    .register-container .ui.form .dob-fields {
+        width: 100%;
+        display: flex;
+        margin: 0;
+    }
+
+    .register-container .ui.form:not(.unstackable) [class*="equal width"].fields.dob-fields:not(.unstackable)>.field {
+        width: 33.33333% !important;
+        padding-left: 3.5px;
+        padding-right: 3.5px;
+    }
+
+    .register-container .ui.form:not(.unstackable) [class*="equal width"].fields.dob-fields:not(.unstackable)>.field:first-child {
+        padding-left: 0;
+    }
+
+    .register-container .ui.form:not(.unstackable) [class*="equal width"].fields.dob-fields:not(.unstackable)>.field:last-child {
+        padding-right: 0;
+    }
+
+    .register-container .ui.form .ui.radio.checkbox,
+    .register-container .ui.form .custom-check-width .ui.radio.checkbox {
+        width: auto;
+    }
+
+    .register-container .ui.form .ui.radio.checkbox label {
+        font-size: 14px;
+    }
+
+    .register-container .ui.form .ui.radio.checkbox label:before {
+        width: 15px;
+        height: 15px;
+    }
+
+    .register-container .ui.form .ui.radio.checkbox label:after {
+        width: 25px;
+        height: 25px;
+    }
+
+    .register-container .ui.form .field.address-field .ui.input.post-code-input {
+        width: 63%;
+    }
+
+    .register-container .ui.form .switch-section {
+        margin-top: 10px;
+    }
+
+    .register-container .ui.form .action-section .ui.button,
+    .reset-password-modal .content .action-section .ui.button,
+    .register-container .switch-section .ui.button {
+        width: 100%;
+        font-size: 14px;
+        margin-top: 9px;
+        height: 44px;
+    }
+
+    .register-container .form-container {
+        margin-top: 40px;
+    }
+
+    .register-container .form-container.user .ui.form,
+    .register-container .form-container.provider .ui.form {
+        width: 100%;
+        display: block;
+        padding: 40px 36px;
+        margin: 20px auto;
+    }
+
+    .register-container .form-container.user .ui.form .fields-section {
+        width: 100%;
+        padding-right: 0px;
+        margin-bottom: 25px;
+    }
+
+    .register-container .ui.form .fields-section .field:nth-child(2) {
+        margin-bottom: 10px !important;
+    }
+
+    .register-container .form-container .ui.form .fields-section a {
+        font-size: 14px;
+    }
+
+    .register-container .form-container .ui.form .fields-section .action-section .ui.button {
+        width: 100%;
+    }
+
+    .register-container .form-container.user .ui.form .login-options {
+        text-align: left;
+        border-top: 0.5px solid #231815;
+        border-left: 0;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .register-container .form-container.user .ui.form .login-options p {
+        margin-top: 25px;
+        font-size: 14px;
+    }
+
+    .register-container .form-container.user .ui.form .login-options img {
+        margin-bottom: 1px;
+        width: 100%;
+        height: 44px;
+    }
+
+    .register-container .switch-section {
+        margin-top: 40px;
+    }
+
+    .register-container .switch-section h1 {
+        font-size: 18px;
+        margin-bottom: 1px;
+    }
+
+    .register-container .switch-section .switch-register {
+        margin-bottom: 40px;
+    }
+
+    .register-container .switch-section .switch-login {
+        margin-bottom: 40px;
+    }
+
+    .register-container .form-container h1 {
+        font-size: 18px;
+    }
+
+    .reset-password-modal.ui.modal {
+        border-radius: 20px;
+        width: 91.5%;
+        top: 41px;
+        left: 52%;
+    }
+
+    .reset-password-modal .content .header-section {
+        margin-top: 18px;
+    }
+
+    .ui.modal .close-section img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .reset-password-modal .content .header-section p {
+        font-size: 14px;
+        padding: 0px 43px;
+    }
+
+    .reset-password-modal .content .ui.form {
+        width: 100%;
+        padding: 0 5px;
+        margin: 33px auto 10px;
+    }
+
+    .reset-password-modal .content .action-section {
+        margin-bottom: 36px;
+    }
+
+    .register-container .description-section {
+        margin-top: 40px;
+        margin-right: 36px;
+        margin-left: 36px;
+    }
+
+    .register-container .description-section .header-text {
+        margin-right: 19px;
+        margin-left: 19px;
+    }
+
+    .register-container .description-section .header-text h1 {
+        font-size: 18px;
+    }
+
+    .register-container .description-section .header-text p {
+        font-size: 14px;
+    }
+
+    .register-container .description-section .action-section .ui.button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .register-container .description-section .action-section .ui.button:first-child {
+        margin-bottom: 10px;
+    }
+
+    .register-container .ui.form.inquiry-form {
+        width: 100%;
+    }
+
+    .register-container .ui.form.inquiry-form .action-section .ui.button {
+        width: 100%;
+    }
+
+    .register-container .ui.form.inquiry-form .action-section p {
+        font-size: 16px;
+    }
+
+    .register-container.completed .description-section .first-section {
+        margin-bottom: 20px;
+    }
+
+    .welcome-modal.ui.modal {
+        width: 96%;
+    }
+
+    .welcome-modal.ui.modal .content .main .content-section {
+        padding-top: 50px;
+    }
+}
